@@ -45,7 +45,6 @@ This repo should build automatically on Github Pages. To build the site locally 
 bundle exec jekyll serve --watch --config _config_dev.yml
 ```
 
-
 You can also run ```bundle exec jekyll build``` (to generate the site in ```/_site```) or ```bundle exec jekyll serve``` (optionally with the ```--watch``` flag to rebuild automatically when a source markdown file changes) 
 
 ## Notes
@@ -56,3 +55,4 @@ You can also run ```bundle exec jekyll build``` (to generate the site in ```/_si
    - removing the ```relative_permalinks: true``` 
    - kramdown's auto table of contents
    - adding source and edit links
+ - I use [this trick](http://stackoverflow.com/a/7472481) to keep the master branch synchronised with the gh-pages branch
