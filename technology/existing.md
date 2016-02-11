@@ -1,5 +1,5 @@
 ---
-title: Technology - Existing Approaches
+title: Existing Approaches
 ---
 
  - SIAB uses Drupal and aims to publish or manage content as markdown files. Possibly evolving towards a static Markdown files, possibly evolving to provide a Content API. https://github.com/securityinabox/siabguide

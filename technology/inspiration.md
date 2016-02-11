@@ -1,5 +1,5 @@
 ---
-title: Technology - Inspiration
+title: Inspiration
 ---
 
 * TOC

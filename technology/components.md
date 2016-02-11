@@ -1,5 +1,5 @@
 ---
-title: Technology - Components
+title: Components
 ---
 
 ### Authoring
