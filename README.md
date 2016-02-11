@@ -19,7 +19,7 @@ In particular by:
 
 # Roadmap
 
-  - [Kick off](https://github.com/iilab/contentascode-site/milestones)
+  - [Lift off](https://github.com/iilab/contentascode-site/milestones)
 
 # Reference Implementation
 
