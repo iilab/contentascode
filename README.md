@@ -42,7 +42,7 @@ Other implementations based on self-hosted software Gitlab/Jekyll/Prose will be 
 This repo should build automatically on Github Pages. To build the site locally for development:
 
 ```
-bundle exec jekyll serve --watch --config _config_dev.yml
+bundle exec jekyll serve --watch --baseurl ''
 ```
 
 You can also run ```bundle exec jekyll build``` (to generate the site in ```/_site```) or ```bundle exec jekyll serve``` (optionally with the ```--watch``` flag to rebuild automatically when a source markdown file changes) 

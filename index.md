@@ -25,6 +25,6 @@ In particular by:
 
 Read more about:
 
- - Our [approach and goals](/approach/)
- - The [technology](/technology/) side of the partnership
- - The [partner projects](/partners/)
+ - Our [approach and goals](approach/)
+ - The [technology](technology/) side of the partnership
+ - The [partner projects](partners/)
