@@ -8,8 +8,8 @@ permalink:        pretty
 title:            Content as Code
 tagline:          'A partnership to support content re-use and improve maintainability of content.'
 description:      'A partnership to support content re-use and improve maintainability of content.'
-url:              http://iilab.github.io/contentascode-site
-baseurl:          /
+url:              http://iilab.github.io/
+baseurl:          /contentascode-site
 
 author:
   name:           'Jun Matsushita'
