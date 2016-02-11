@@ -8,8 +8,9 @@ title: Technology - Translation
 # How Panic Button is doing it
 
 # Git repositories: 
-## 1. [panicbutton.io](https://github.com/PanicInitiative/panicbutton.io) (jekyll site)
-## 2. [PanicButton](https://github.com/PanicInitiative/PanicButton) (Android app) 
+
+1. [panicbutton.io](https://github.com/PanicInitiative/panicbutton.io) (jekyll site)
+2. [PanicButton](https://github.com/PanicInitiative/PanicButton) (Android app) 
 
 # Panicbutton.io Transifex Workflow
 
