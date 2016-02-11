@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include sidebar.html %}
+
+    <div class="content container">
+          <small><a href="{{site.github.repository_url}}/tree/master/{{page.path}}">View page source</a> - <a href="{{site.github.repository_url}}/edit/master/{{page.path}}">Edit this page</a></small>
+          <hr>
+
+      {{ content }}
+    </div>
+
+  </body>
+</html>
