@@ -2,15 +2,10 @@
 title: Existing Approaches
 ---
 
- - SIAB uses Drupal and aims to publish or manage content as markdown files. Possibly evolving towards a static Markdown files, possibly evolving to provide a Content API. https://github.com/securityinabox/siabguide
- - Umbrella is a native Android app, the content is generated from csv files into an asset database (probably sqlite) in the APK. https://github.com/securityfirst/Umbrella_android
- - Story Maker is an Android app using the StoryPath (formerly liger) library to load content packs stored as YAML files. There is a transifex workflow but I'm not sure about how the content is authored. https://github.com/StoryMaker/content-packs https://github.com/StoryMaker/storypath
- - EFF uses Drupal. The repo doesn't seem to have the content of the guide. https://github.com/EFForg/ssd 
- - Panic Button is a native Android app using a custom made JSON file parser to generate its interface (similar but less mature concept than StoryPath). Content is authored in Prose as Markdown and Jekyll generates the JSON files. There's an ongoing effort to interop with Transifex.
- - Digital First Aid Kit's source is a git repository of markdown files. Not sure about how the website and printed versions are generated. https://github.com/RaReNet/DFAK
- - Level Up uses Drupal. No source code or content I could find.
+* TOC
+{:toc}
 
-### Summary
+## Overview
 
 |              | Content Format | Content Authoring |     Content Publication      |         Content Delivery         |
 |--------------|----------------|-------------------|------------------------------|----------------------------------|
@@ -19,6 +14,14 @@ title: Existing Approaches
 | Story Maker  | YAML           | Git / tx          | YAML -> Zipped JSON (Python) | Native Android (StoryPath/Liger) |
 | SSD          | ?              | Drupal            | Drupal                       | Drupal Web                       |
 | Panic Button | Markdown       | Prose / tx        | md -> JSON (Jekyll)          | Native Android (custom)          |
+
+ - SIAB uses Drupal and aims to publish or manage content as markdown files. Possibly evolving towards a static Markdown files, possibly evolving to provide a Content API. https://github.com/securityinabox/siabguide
+ - Umbrella is a native Android app, the content is generated from csv files into an asset database (probably sqlite) in the APK. https://github.com/securityfirst/Umbrella_android
+ - Story Maker is an Android app using the StoryPath (formerly liger) library to load content packs stored as YAML files. There is a transifex workflow but I'm not sure about how the content is authored. https://github.com/StoryMaker/content-packs https://github.com/StoryMaker/storypath
+ - EFF uses Drupal. The repo doesn't seem to have the content of the guide. https://github.com/EFForg/ssd 
+ - Panic Button is a native Android app using a custom made JSON file parser to generate its interface (similar but less mature concept than StoryPath). Content is authored in Prose as Markdown and Jekyll generates the JSON files. There's an ongoing effort to interop with Transifex.
+ - Digital First Aid Kit's source is a git repository of markdown files. Not sure about how the website and printed versions are generated. https://github.com/RaReNet/DFAK
+ - Level Up uses Drupal. No source code or content I could find.
 
 ## Interoperability approaches
 
