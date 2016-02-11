@@ -3,14 +3,42 @@ layout: page
 title: Technology
 ---
 
-The following pages describe the various technology related aspect of the content as code project
+> Also see the [status page](status) and [roadmap](status#roadmap)
 
-* [Components](components) : Overview of content as code components
+The following sub-pages describe the various technology related aspect of the content as code project
+
+* Workflow Components
+  * [Authoring](authoring)
   * [Translation](translation)
+  * [Collaboration](collaboration)
+  * [Management](management)
+  * [Reuse](reuse)
 * [Existing Approaches](existing) : Descriptions of existing approaches among project partners. 
 * [Inspiration](inspiration) from other projects
 
-## Architecture
+## Technical Goals
+
+### CMS Parity
+
+> Having usable solutions for commonly available features in CMSes is a design goal.
+
+Have clear, integrated and open source solutions to deal with comments, visit statistics, search, forms and other features traditionally managed with a database backend.
+
+### Flexible structure
+
+> Allowing completely free form content structures or complex content structures is a design goal.  
+
+### Interoperable and extensible
+
+> Allowing mixed workflows that allow importing/exporting/synchronising content across systems and adding software components is a design goal.
+
+### Streamlined and extensible
+
+> Simplicity and ease of use and understanding are design goals.
+
+Composed of many different software parts, the workflow is nonetheless streamlined and integrated. When deployed with default settings, it can be used immediately. Authors, editors, translators as well as software and systems engineer can understand how the pieces fit together.
+
+## Previous Architecture
 
 In the below diagram the following approach is proposed:
 

@@ -9,7 +9,8 @@ title: Inspiration
 
 ### Web based Editors
 
- - Aloha
+ - Quip
+ - Penflip
  - 
 
 ### Markdown
