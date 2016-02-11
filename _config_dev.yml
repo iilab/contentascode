@@ -1,0 +1,38 @@
+# Dependencies
+markdown:         kramdown
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Content as Code
+tagline:          'A partnership to support content re-use and improve maintainability of content.'
+description:      'A partnership to support content re-use and improve maintainability of content.'
+url:              http://localhost:4000
+baseurl:          /
+
+author:
+  name:           'Jun Matsushita'
+  url:            https://twitter.com/iilab
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+
+kramdown:
+  input: GFM
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..3
+  enable_coderay: false
+
+github:
+  repo:           https://github.com/iilab/contentascode-site
+
+gems:
+  - jekyll-sitemap
+  - jekyll-gist
