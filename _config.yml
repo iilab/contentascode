@@ -15,6 +15,13 @@ author:
   name:           'Jun Matsushita'
   url:            https://twitter.com/iilab
 
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+
 kramdown:
   input: GFM
   auto_ids: true
