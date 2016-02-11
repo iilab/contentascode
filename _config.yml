@@ -6,8 +6,8 @@ permalink:        pretty
 
 # Setup
 title:            Content as Code
-tagline:          'A partnership to support content re-use and improve maintainability of content.'
-description:      'A partnership to support content re-use and improve maintainability of content.'
+tagline:          'Developing workflows and technology to improve content re-use and maintainability.'
+description:      'Developing workflows and technology to improve content re-use and maintainability.'
 url:              http://iilab.github.io
 baseurl:          /contentascode
 

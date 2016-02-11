@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-**Content as Code** is a partnership to support content re-use and improve maintainability of content.
+**Content as Code** is a partnership which develops workflows and technology to improve content re-use and maintainability.
 
 The partnership brings together implementers contributing to projects publishing free/libre and open source content and wanting to have lightweight (post-CMS) approaches to content management that focus on the **author experience** (as well as editor and translator experience).
 
@@ -25,6 +25,6 @@ In particular by:
 
 Read more about:
 
- - Our [approach and goals](approach)
- - The [technology](technology) side of the partnership
+ - Our [approach and goals](approach) to editorial workflows
+ - The [technology](technology) supporting content workflows
  - The [partner projects](partners)
