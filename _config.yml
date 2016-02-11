@@ -9,7 +9,7 @@ title:            Content as Code
 tagline:          'A partnership to support content re-use and improve maintainability of content.'
 description:      'A partnership to support content re-use and improve maintainability of content.'
 url:              http://iilab.github.io
-baseurl:          /contentascode-site
+baseurl:          /contentascode
 
 author:
   name:           'Jun Matsushita'
@@ -31,7 +31,7 @@ kramdown:
   enable_coderay: false
 
 github:
-  repo:           https://github.com/iilab/contentascode-site
+  repo:           https://github.com/iilab/contentascode
 
 gems:
   - jekyll-sitemap
