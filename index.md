@@ -14,7 +14,7 @@ To develop workflows and technology in order to **make content authoring and man
 In particular by:
 
  - Using **Git** for version control
- - Using **Mardown** and enhanced flavors of Markdown for authoring
+ - Using **Markdown** and enhanced flavors of Markdown for authoring
  - Developing better tools focusing on **author experience**
  - Developing pathways for **content contribution and review**
  - Enabling **translation workflows**
