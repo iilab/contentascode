@@ -12,6 +12,7 @@ The partnership brings together implementers contributing to projects publishing
 To develop workflows and technology in order to **make content authoring and management benefit from software engineering collaboration best practices**.
 
 In particular by:
+
  - Using **Git** for version control
  - Using **Mardown** and enhanced flavors of Markdown for authoring
  - Developing better tools focusing on **author experience**
