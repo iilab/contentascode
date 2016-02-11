@@ -3,18 +3,11 @@ layout: page
 title: Approach
 ---
 
+> [Contribute your ideas and discuss the approach of Content as Code](https://github.com/iilab/contentascode/issues/1)
+
 * TOC
 {:toc}
 
-## Problem
-
-There is a problem with content management in a Post-CMS context. For projects which have complex editorial workflows, adopting more lightweight approaches such as static site generation is still difficult, can create friction and are lacking in functionality.
-
-## Approach
-
-Software engineering as a discipline, has been dealing with complex contribution processes requiring to create, move, merge, transform large quantities of code. This has led to the creation of tool to be able to trace the history of changes, allow very large team contributing to similar code bases and manage, reuse vast amounts of other project's code, track changes and organise review by peers, manage documentation and its obsolecence, translations of manuals and software, test problems as early as possible in order to rapidly and frequently build software artifacts that can be deployed across servers, computer and mobile devices.
-
-Applying these concepts and lessons to editorial workflows is not trivial and requires a strong focus on author experience (as well as editor and translator experience).
 
 ## Design Goals
 
@@ -54,8 +47,15 @@ Multimedia content, internal links or external links should be easy to navigate 
 
 > Publishing to the web, books, mobile apps or other channels is a design goal.
 
+# Content as Code Approach
 
-## Workflow FAQ
+There is a problem with content management in a [Post-CMS](#what-does-post-cms-means) context. For projects which have complex editorial workflows, adopting more lightweight approaches such as static site generation is still difficult, can create friction and are lacking in functionality.
+
+Software engineering as a discipline, has been dealing with complex contribution processes requiring to create, move, merge, transform large quantities of code. This has led to the creation of tool to be able to trace the history of changes, allow very large team contributing to similar code bases and manage, reuse vast amounts of other project's code, track changes and organise review by peers, manage documentation and its obsolecence, translations of manuals and software, test problems as early as possible in order to rapidly and frequently build software artifacts that can be deployed across servers, computer and mobile devices.
+
+Applying these concepts and lessons to editorial workflows is not trivial and requires a strong focus on author experience (as well as editor and translator experience).
+
+## FAQ
 
 ### What does Post-CMS means?
 
