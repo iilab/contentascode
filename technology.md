@@ -18,6 +18,9 @@ The following sub-pages describe the various technology related aspect of the co
 
 ## Technical Goals
 
+* TOC
+{:toc}
+
 ### CMS Parity
 
 > Having usable solutions for commonly available features in CMSes is a design goal.
