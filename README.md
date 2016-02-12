@@ -6,7 +6,7 @@ It is formed of implementers in organisations publishing free/libre and open sou
 
 ## Goals
 
-To develop workflows and technology in order to **make content authoring and management benefit from software engineering collaboration best practices**.
+To develop workflows and technology to **make content authoring and management benefit from software engineering collaboration best practices**.
 
 In particular by:
  - Using **Git** for version control
@@ -15,7 +15,7 @@ In particular by:
  - Developing pathways for **content contribution and review**
  - Enabling **translation workflows**
  - Support **static website generation** and interoperability with **content management systems**
- - Enable content reuse
+ - Enabling content reuse
 
 # Roadmap
 
@@ -49,7 +49,7 @@ You can also run ```bundle exec jekyll build``` (to generate the site in ```/_si
 
 ## Notes
 
- - This site was built by reusing the [using the Hyde](https://github.com/poole/hyde) theme.
+ - This site was built with the [Hyde](https://github.com/poole/hyde) theme.
  - [Minor changes were made](https://github.com/poole/hyde/compare/master...iilab:master) such as:
    - adding the ```gems``` key/values
    - removing the ```relative_permalinks: true``` 
