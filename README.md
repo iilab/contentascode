@@ -19,11 +19,11 @@ In particular by:
 
 # Roadmap
 
-  - [Lift off](https://github.com/iilab/contentascode-site/milestones)
+  - [Lift off](https://github.com/iilab/contentascode/milestones)
 
 # Reference Implementation
 
-This repo contains the source (```master``` branch) and generated (```gh-pages``` branch) site which is building http://iilab.github.io/contentascode-site
+This repo contains the source (```master``` branch) and generated (```gh-pages``` branch) site which is building http://iilab.github.io/contentascode
 
 It is a reference implementation for the crump workflow for Github/Github Pages/Prose/Transifex and also depends on:
  - https://github.com
