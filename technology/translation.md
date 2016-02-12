@@ -5,6 +5,14 @@ title: Translation
 * TOC
 {:toc}
 
+## Goal
+
+Allow translation of content that is managed with static website generators (https://www.staticgen.com/)
+
+With this approach the de factor standard is to have what’s called a Frontmatter which is YAML included into Markdown, allowing to store metadata together with rich text. Many keys in the front matter should be translatable (title, summary, button text and what not) while others shouldn’t.
+
+Our approach to enable the translation of such source text with Transifex (or other standard tools) is to build a round trip transformation script which creates JSON Key Value (with language independent keys) for the documents, in order to allow their translation.
+
 ## How Panic Button is doing it
 
 ### Git repositories: 
