@@ -3,25 +3,29 @@ layout: default
 title: Home
 ---
 
-**Content as Code** is a partnership which develops workflows and technology to improve content re-use and maintainability.
-
-The partnership brings together implementers contributing to projects publishing free/libre and open source content and wanting to have lightweight (post-CMS) approaches to content management that focus on the **author experience** (as well as editor and translator experience).
-
 ## Goals
 
-To develop workflows and technology in order to **make content authoring and management benefit from software engineering collaboration best practices**.
+**Content as Code** is an approach to develop workflows and technology to improve content re-use and maintainability.
 
-In particular by:
+It aims to **make content authoring and management benefit from software engineering collaboration best practices**.
 
+Our **design goals** are to enable:
+ - Focused and Agile Writing
+ - Localisation and translation
+ - Low barrier to collaboration
+ - Track changes and manage contributions
+ - Content Reuse
+ - Multiple publication channels
+
+Our **technology approach** builds on top of lightweight tools that separate concerns (instead of large monolithic frameworks as generally seen in CMSes):
  - Using **Git** for version control
  - Using **Markdown** and enhanced flavors of Markdown for authoring
- - Developing better tools focusing on **author experience**
- - Developing pathways for **content contribution and review**
- - Enabling **translation workflows**
  - Support **static website generation** and interoperability with **content management systems**
- - Enable content reuse
+ - Support a **micro-service** approach to providing commenting, statistics and other dynamic features.
 
 ## More
+
+Content as code is supported by a partnership. The partnership brings together implementers contributing to projects publishing free/libre and open source content and wanting to have lightweight (post-CMS) approaches to content management that focus on the **author experience** (as well as editor and translator experience).
 
 Read more about:
 
