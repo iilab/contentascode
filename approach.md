@@ -33,6 +33,8 @@ Read more about the [technology approach for translation](../technology/translat
 
 > Allowing others to spot problems, develop new content or adapt content for new purposes is a design goal.
 
+This should include the collaborative creation, adaptation and translation of content in sprints, remotely or with other innovative approaches.
+
 ### Track changes and manage contributions
 
 > Maintain editorial coherence by making it easy to track, review and comment on changes coming from a range of sources and improving the editor's experience is a design goal.
