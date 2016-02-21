@@ -10,6 +10,7 @@ title: Home
 It aims to **make content authoring and management benefit from software engineering collaboration best practices**.
 
 Our **design goals** are to enable:
+
  - [Focused Writing](approach/#focused-writing)
  - [Localisation and translation](approach/#localisation-and-translation)
  - [Low barrier to collaboration](approach/#low-barrier-to-collaboration)
@@ -18,6 +19,7 @@ Our **design goals** are to enable:
  - [Multiple publication channels](approach/#multiple-publication-channels)
 
 Our **technology approach** builds on top of lightweight tools that separate concerns (instead of large monolithic frameworks as generally seen in CMSes):
+
  - Using **Git** for version control
  - Using **Markdown** and enhanced flavors of Markdown for authoring
  - Support **static website generation** and interoperability with **content management systems**
