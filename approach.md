@@ -43,7 +43,7 @@ This should include the collaborative creation, adaptation and translation of co
 
 > Allowing the discovery, tracking and updating of content used from other sources is a design goal.
 
-Multimedia content, internal links or external links should be easy to navigate and include in content.
+Multimedia content, internal and external links should be easy to navigate and include in new content.
 
 ### Multiple publication channels
 
@@ -59,9 +59,9 @@ Applying these concepts and lessons to editorial workflows is not trivial and re
 
 ## FAQ
 
-### What does Post-CMS means?
+### What does Post-CMS mean?
 
-That we've been seduced and then disappointed by CMSes which add too much complexity and therefore create problems of maintainability of content.
+That we've been seduced and then disappointed by [CMSes](https://en.wikipedia.org/wiki/Content_management_system "Content Management Systems") which add too much complexity and therefore create problems of maintainability of content.
 
 ### Why use Markdown and not AsciiDoc/ReStructure/Textile/Wiki syntax?
 
