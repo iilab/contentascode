@@ -11,6 +11,19 @@ title: Status
 
 > [Help develop the proof of concept #7](https://github.com/iilab/contentascode/issues/7)
 
+## Implementations
+
+|        Name       |             Decription            |                  Repo URL                  | Text Format | Generator  | Web | Mobile | Book | Interactive |
+| ----------------- | --------------------------------- | ------------------------------------------ | ----------- | ---------- | --- | ------ | ---- | ----------- |
+| Content as Code   | Reference Implementation          | iilab/contentascode                        | Markdown    | Jekyll     | Yes | No     | No   | No          |
+| Open Mentoring    | Mobile Education                  | iilab/openmentoring                        | Markdown    | Metalsmith | Yes | Yes    | Soon | Some        |
+| Panic Button      | Simple CMS for Mobile App         | PanicInitiative/PanicButton                | Markdown    | Jekyll     | Yes | Yes    | No   | Some        |
+| Using TBB         | Semantic Documentation experiment | elationfoundation/using-tor-browser-bundle | Markdown    | Jekyll     | Yes |        |      |             |
+| Security in a Box | Work in Progress                  | coming soon                                |             |            |     |        |      |             |
+| Level Up          | Work in Progress                  | coming soon                                |             |            |     |        |      |             |
+| TOTEM             | Work in Progress                  | coming soon                                |             |            |     |        |      |             |
+| Advocacy Assembly | Work in Progress                  | coming soon                                |             |            |     |        |      |             |
+
 ## Roadmap
 
 * TOC
