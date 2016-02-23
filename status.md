@@ -13,7 +13,7 @@ title: Status
 
 ## Implementations
 
-|        Name       |             Decription            |                  Repo URL                  | Text Format | Generator  | Web | Mobile | Book | Interactive |
+|        Name       |             Description            |                  Repo URL                  | Text Format | Generator  | Web | Mobile | Book | Interactive |
 | ----------------- | --------------------------------- | ------------------------------------------ | ----------- | ---------- | --- | ------ | ---- | ----------- |
 | Content as Code   | Reference Implementation          | iilab/contentascode                        | Markdown    | Jekyll     | Yes | No     | No   | No          |
 | Open Mentoring    | Mobile Education                  | iilab/openmentoring                        | Markdown    | Metalsmith | Yes | Yes    | Soon | Some        |
@@ -23,6 +23,19 @@ title: Status
 | Level Up          | Work in Progress                  | coming soon                                |             |            |     |        |      |             |
 | TOTEM             | Work in Progress                  | coming soon                                |             |            |     |        |      |             |
 | Advocacy Assembly | Work in Progress                  | coming soon                                |             |            |     |        |      |             |
+
+### Reference Implementation Matrix
+
+|              Name              |               Description                |  Repo  |    Editor    | Generator  |    Build     |   Hosting   |     Services     |
+| ------------------------------ | ---------------------------------------- | ------ | ------------ | ---------- | ------------ | ----------- | ---------------- |
+| stack-github-pages             | Fork and play.                           | Github | Prose        | Jekyll     | Github Pages | Github      |                  |
+| stack-github-jekyll-travis     | With Jekyll and Travis CI                | Github | Prose        | Jekyll     | Travis       | Github      |                  |
+| stack-github-metalsmith-travis | With Metalsmith and Travis CI            | Github | Prose        | Metalsmith | Travis       | Github      |                  |
+| stack-jekyll-jenkins           | Open souce stack                         | Gitlab | Hosted Prose | Jekyll     | Jenkins      | Self-Hosted |                  |
+| stack-metalsmith-gitlabci      | Open souce stack with metalsmith         | Gitlab | Hosted Prose | Jekyll     | Gitlab CI    | Self-Hosted |                  |
+| infra-heroku                   | Push to deploy micro-service infra       | Gitlab | Hosted Prose | Jekyll     | Jenkins      | Heroku      | Single container |
+| infra-docker                   | Docker single server micro-service infra |        |              |            |              |             | Multi-container  |
+| infra-ansible                  | Distributed micro-service infra          |        |              |            |              |             | Multi-server     |
 
 ## Roadmap
 
