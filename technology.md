@@ -13,6 +13,7 @@ The following sub-pages describe the various technology related aspect of the co
   * [Collaboration](collaboration)
   * [Management](management)
   * [Reuse](reuse)
+* [Implementation](implementation)
 * [Existing Approaches](existing) : Descriptions of existing approaches among project partners. 
 * [Inspiration](inspiration) from other projects
 
