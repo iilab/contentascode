@@ -1,5 +1,5 @@
 ---
-title: Technology
+title: Implementation
 ---
 
 > Also see the [status page](status) and [roadmap](status#roadmap)
@@ -7,6 +7,7 @@ title: Technology
 ## Developer Experience
 
 Focus on allowing user to start from a project scaffold:
+
   - a Blog (Jekyll compatible) with added "Contribute to this page" links.
   - a Wiki (Gollum compatible)
   - a Resource website
@@ -17,6 +18,7 @@ We could create repos (```contentascode-blog```, ```contentascode-wiki```, ```co
 The default pipelines would have a travis.yml that push to a ```gh-pages``` branch.  
 
 We could also look into Grunt-init or Yeoman Project Scaffolding tools to allow configuration of various options such as:
+
  - Choice of templating language and other frontend framework choices
  - Choice of integration backend (Jekyll/Metalsmith/...)
  - Choice of a theme (Bootstrap and variants, Foundation, GH Pages themes...)
