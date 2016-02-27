@@ -55,7 +55,7 @@ There is a problem with content management in a [Post-CMS](#what-does-post-cms-m
 
 Software engineering as a discipline, has been dealing with complex contribution processes requiring to create, move, merge, transform large quantities of code. This has led to the creation of tool to be able to trace the history of changes, allow very large team contributing to similar code bases and manage, reuse vast amounts of other project's code, track changes and organise review by peers, manage documentation and its obsolecence, translations of manuals and software, test problems as early as possible in order to rapidly and frequently build software artifacts that can be deployed across servers, computer and mobile devices.
 
-![dependencies](../images/dependencies.png)
+[![dependencies](../images/dependencies.png)](../images/dependencies.png)
 
 Applying these concepts and lessons to editorial workflows is not trivial and requires a strong focus on author experience (as well as editor and translator experience).
 
