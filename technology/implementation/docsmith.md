@@ -1,3 +1,7 @@
+---
+title: docsmith
+---
+
 # docsmith
 
 > An npm module called [docsmith](https://www.npmjs.com/package/docsmith) has been published with the following README.md
