@@ -2,8 +2,6 @@
 title: docsmith
 ---
 
-# docsmith
-
 > An npm module called [docsmith](https://www.npmjs.com/package/docsmith) has been published with the following README.md
 
 [Content as Code](https://contentascode.io) aims to make it easy to start a website in just a few steps but also build complex content publishing pipelines. It develops best practices to managing content workflows inspired from how code is managed in large collaborative software engineering projects.
