@@ -4,7 +4,7 @@ install:
 script: 'bundle exec rake site:deploy --quiet'
 branches:
   except:
-    - /^fixture\/\*.*/
+    - /^fixture\/.*/
 env:
   global:
     secure: >
