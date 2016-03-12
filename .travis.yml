@@ -2,6 +2,9 @@ language: ruby
 install:
   - bundle install
 script: 'bundle exec rake site:deploy --quiet'
+branches:
+  except:
+    - fixture/*
 env:
   global:
     secure: >
