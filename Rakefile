@@ -10,14 +10,15 @@ require 'date'
 require 'yaml'
 
 CONFIG = YAML.load(File.read('_config.yml'))
-USERNAME = CONFIG["username"] || ENV['GIT_NAME']
-REPO = CONFIG["repo"] || "#{USERNAME}.github.io"
+USERNAME = CONFIG['username']
+OWNER = CONFIG["owner"]
+REPO = CONFIG["repo"] || "#{OWNER}.github.io"
 
 # Determine source and destination branch
 # User or organization: source -> master
 # Project: master -> gh-pages
 # Name of source branch for user/organization defaults to "source"
-if REPO == "#{USERNAME}.github.io"
+if REPO == "#{OWNER}.github.io"
   SOURCE_BRANCH = CONFIG['branch'] || "source"
   DESTINATION_BRANCH = "master"
 else
@@ -88,7 +89,7 @@ end
 
 def check_destination
   unless Dir.exist? CONFIG["destination"]
-    sh "git clone https://#{ENV['GIT_NAME']}:#{ENV['GH_TOKEN']}@github.com/#{USERNAME}/#{REPO}.git #{CONFIG["destination"]}"
+    sh "git clone https://#{USERNAME}:#{ENV['GH_TOKEN']}@github.com/#{OWNER}/#{REPO}.git #{CONFIG["destination"]}"
   end
 end
 
@@ -199,8 +200,8 @@ namespace :site do
 
     # Configure git if this is run in Travis CI
     if ENV["TRAVIS"]
-      sh "git config --global user.name '#{ENV['GIT_NAME']}'"
-      sh "git config --global user.email '#{ENV['GIT_EMAIL']}'"
+      sh "git config --global user.name '$GIT_NAME'"
+      sh "git config --global user.email '$GIT_EMAIL'"
       sh "git config --global push.default simple"
     end
 
@@ -217,7 +218,7 @@ namespace :site do
     sha = `git log`.match(/[a-z0-9]{40}/)[0]
     Dir.chdir(CONFIG["destination"]) do
       sh "git add --all ."
-      sh "git commit -m 'Updating to #{USERNAME}/#{REPO}@#{sha}.'"
+      sh "git commit -m 'Updating to #{OWNER}/#{REPO}@#{sha}.'"
       sh "git push --quiet origin #{DESTINATION_BRANCH}"
       puts "Pushed updated branch #{DESTINATION_BRANCH} to GitHub Pages"
     end
