@@ -51,7 +51,7 @@ gems:
 # repo defaults to USERNAME.github.io
 # Branch defaults to "source" for USERNAME.github.io
 # or "master" otherwise
-#username: EXAMPLE
+username: iilab
 repo: contentascode
 #branch: source
 
