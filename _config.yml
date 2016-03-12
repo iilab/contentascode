@@ -41,3 +41,26 @@ github:
 gems:
   - jekyll-sitemap
   - jekyll-gist
+
+# jekyll-travis
+
+# Settings for deploy rake task
+# This destination folder is probably not necessary and we should either migrate out of jekyll-travis
+# (which might be a good idea to avoid rake+metalsmith+...) or submit a pull request to default this to 
+# a temp folder of some sort.
+
+destination: ../build
+
+safe: false
+lsi: false
+pygments: true
+
+exclude:
+  - README.md
+  - Rakefile
+  - Gemfile
+  - Gemfile.lock
+  - changelog.md
+  - "*.Rmd"
+  - vendor
+  - .travis.yml
