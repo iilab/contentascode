@@ -1,8 +1,11 @@
 ---
 title: docsmith
+source: https://github.com/contentascode/docsmith/README.md
 ---
 
 > An npm module called [docsmith](https://www.npmjs.com/package/docsmith) has been published with the following README.md
+
+# This README is out of date and should benefit from dependency tracking! See the [current README here](https://github.com/contentascode/docsmith/README.md)
 
 [Content as Code](https://contentascode.io) aims to make it easy to start a website in just a few steps but also build complex content publishing pipelines. It develops best practices to managing content workflows inspired from how code is managed in large collaborative software engineering projects.
 
@@ -34,7 +37,9 @@ The sample repos use Github (soon Prose) to help with content editing. By defaul
 
 You can go to the next level by using another free online service (Travis CI) to build your site. This will provide you with additional features such as using validations. For instance to check that links are working or that your content is generally well formatted and readable. You can activate travis by going to travis-ci.com signing up and activating travis for your USER/REPO project.
 
-Is that it? Yes, now you'll receive emails with notifications each time there is a problem with your website build, like a broken link or possible other problems with your site.
+Is that it? Yes, now you'll receive emails with notifications each time there is a problem with your website build, like a broken link or possible other problems with your site. 
+
+(Open an issue to report broken link, replace with an archive.org link if broken link!)
 
 ### Choose a theme
 
@@ -52,6 +57,8 @@ If you want to go deeper into **docsmith** and content as code, you can also hel
 
  - ```docsmith init```: Or ```docsmith init <template>``` like ```docsmith init blog```, ```docsmith init doc``` or ```docsmith init wiki```.
  - ```docsmith install``` : in a repo would read content.yml and create package.json, metalsmith.json and docker-compose.json and run necessary installations (npm install,...). 
+ - ```docsmith install validator``` : Install default plugin suite in validator (linkchecker) or the one specified in the docsmith.yml file.
+ - ```docsmith install validator styleguide```: Install specific plugin (and updates the yml file)
 
  - ```docsmith build```: Build the content locally.
  - ```docsmith serve```: Serve the content locally. (Should probably open a console and allow to `pull`,`update` or `pull` within it)
@@ -67,13 +74,13 @@ Example ```docsmith.yml```:
 
 ```yaml
 source: .                       # By default uses current directory, should be able to pull a remote directory too.
-build: 'auto'                   # Uses the default mode of the build system to determine where to build
+build: 'github-pages'           # How is the build pipeline managed. could be travis, gitlab-ci, drone, local Makefile, gulp, grunt...
+
 components:
   source: 'github'              # Defaults to github could also be gitlab or a local folder or a remote url. Gollum for a wiki?
   transform: ''                 # Maybe some type of pre-processing
   validate: ''                  # Defaults to empty. List of validation scripts, for instance links,...
-  editor: 'github'              # What is the content authoring environment? Could be prose, realms,...
-  build: 'github-pages'         # How is the build pipeline managed. could be travis, gitlab-ci, drone, local Makefile...  
+  editor: 'github'              # What is the content authoring environment? Could be prose, realms,... 
   generate: 'github-pages'      # How is the site generated. Could be github-pages, jekyll, metalsmith, hugo... 
   publish: 'github-pages'       # Where is the content hosted? 
   discuss: 'github-issues'      # Discussion threads, comments, wiki style discuss page...

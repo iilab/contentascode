@@ -18,7 +18,7 @@ Our **design goals** are to enable:
  - [Content Reuse](approach/#content-reuse)
  - [Multiple publication channels](approach/#multiple-publication-channels)
 
-[![dependencies](images/dependencies.png)](images/dependencies.png)
+![dependencies](images/dependencies.png)
 
 Our [**technology approach**](technology) builds on top of lightweight tools that separate concerns (instead of large monolithic frameworks as generally seen in CMSes):
 

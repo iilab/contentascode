@@ -4,7 +4,7 @@ title: Implementation
 
 > See the **work in progress for the [docsmith](docsmith) reference implementation**
 
-> Also see the [status page](../status) and [roadmap](../status#roadmap)
+> Also see the [status page](../../status) and [roadmap](../../status#roadmap)
 
 ## Developer Experience
 
