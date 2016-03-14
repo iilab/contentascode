@@ -22,7 +22,7 @@
         {% endfor %}
         </div>
 
-        <div style="float:right"><em><a href="{{site.github.repository_url}}/edit/master/{{page.path}}">Edit this page</a> - <a href="{{site.github.repository_url}}/commits/master/{{page.path}}">View page history</a> - <a href="{{site.github.repository_url}}/tree/master/{{page.path}}">View page source</a></em>
+        <div style="float:right"><em><a href="{{site.github.repository_url}}/edit/{{site.github.current_branch}}/{{page.path}}">Edit this page</a> - <a href="{{site.github.repository_url}}/commits/{{site.github.current_branch}}/{{page.path}}">View page history</a> - <a href="{{site.github.repository_url}}/tree/{{site.github.current_branch}}/{{page.path}}">View page source</a></em>
         </div>
       </small>
     </div>
