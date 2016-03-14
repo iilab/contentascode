@@ -19,8 +19,8 @@ deploy:
   script: npm run deploy
 env:
   global:
-    - GH_USERNAME=undefined
-    - CONFIG_OWNER=undefined
-    - CONFIG_REPO=undefined
+    - GH_USERNAME=jmatsushita
+    - CONFIG_OWNER=iilab
+    - CONFIG_REPO=contentascode
     - secure: >
         "JCxcNTabLji5HNukKeAQnB5+knoAFIrxZpjfozNJHadnOid4u73h3iPJv40DrfRsPDq4J+6P1utbqe6NxtKV3P4stpnkSk32aXHI6KqSwkT0lie9mh24/KGujmFw2Ah2Em2EvZgWbwLP03cYI23e7SUkTkbYmPx4QQKBTUXwvkwodq2oY6ct+zrVHTx869XmMMScwP44KIP6iv/xV+EE+wTgpDdoygHLln7bRmKJSD5UpohqHtExmZ1LQmQC0b4rm6g9Ow0qsQvAiMglK4WDFuHJfydUZ+UPxy3dct1xLDFpGbRP841+HLesnvdqASeCmte5ZqMdXUM4u7kDAXITVxS1RuKNHGeMrJRfSSPnlC8xsAExAXK0bumlPeYf1pW/vAH/GKP9CgJtIUIFcTmkeDeUV31nUQZBgIHLGtvhq39MGxEdICFymYkBjcYIVN2ETar4Z2GvhxVGwTP+A59y2I7ktv7YMEeVCTwVR6rNPtm6qFKr0J8lGhNrLLNJ+2FVTYatX/oDhKUubQBC1qd6WccB3K9mxWsNZ1xEdiEPjbYtdYGWz0Oe6KrvsivFJA/kP8ujmFhFXRDVlUVCHmxfdZ4OQi/bpXFrHyVT6q8Q06T4HUUzwT+GHuKXWJSFSKMSo8tc/byn1uxuSYujqIBp5+Izw9rLe1x1eIluyYVbn8c="
