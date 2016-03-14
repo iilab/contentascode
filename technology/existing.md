@@ -112,4 +112,4 @@ Delivery
  - Corbova App with StoryPath/Liger
  - Corbova App with StoryPath/Liger compatible approach
 
-See [Technical Research Wiki Page](https://github.com/openmentoring-content/wiki) for more about platform choice.
+See [Technical Research Wiki Page](https://github.com/iilab/openmentoring-content/wiki) for more about platform choice.

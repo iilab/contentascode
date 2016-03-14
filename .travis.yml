@@ -1,0 +1,28 @@
+language: node_js
+sudo: false
+node_js:
+  - '4.2'
+branches:
+  except:
+    - gh-pages
+cache:
+  bundler: true
+  directories:
+    - node_modules
+    - $HOME/.rvm
+    - $HOME/.nvm
+install:
+  - npm i pm2 http-server contentascode/broken-link-checker -g
+  - "rvm install $(sed 's/ruby-//g' .ruby-version)"
+  - bundle install
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: npm run deploy
+env:
+  global:
+    - GH_USERNAME=jmatsushita
+    - CONFIG_OWNER=iilab
+    - CONFIG_REPO=contentascode
+    - secure: >
+        "dNEItxWntxdzGzqYz30yub6qjKCFNdQgwG63wnBptydlEN5aN9jh3IYZPcUz8zLbQTQydP3m0ZeF99Q+lcAHZUNoFM7F1BaFoEp3A7IobIhZhf+4JqCOttfB4Tzb3U3XT53ZrHnrIIKTOZOFQx3EO55d+KqrnGUxNtVUhb1uAj9siWL+YT8N6BNC77teNa+OM04u+C1N8AJ0sMDe+LKjT2gREnEXKVyj0uMwCVw1NaNW6ke1llsbbStDhVwfP+q8ErgNU0ZdppZT2gXT16a+BQNVuBq6snV8vWMeqzFIZ6A5pLuJzPonMfg/7hqkRnN4KomyWi0cJIvmrpmQLWBFFoWX2eiDm1zfTByJ5hYxdG0f8dZ7iPoF00SqvYGil8QrhkZlq9ZJMyllcZ70ifDxyRHd73MXmTN1HsTVVfv4GJqvUm1mTFCsjgHi8n7SLgj7iDFXoH+CcW5gPTXXyiou3j8FepR/GGmZe01YYWexNK6FUB2J8yamJZ7oIipri3VqT9S1NAkreG7GhMJIaK5oHPHSX27eVy2sQt0Q7kP3UArFlPQczOGM8yqznWLFsj6Y9I5Rq8AwhiyuLqMLGGEZ0clrOK63yw0tuFftWVTzuwamfwHJx4JI/1vwChumtfB96uatkitlQR3k+Xt6xoB49FZmsHUZfrKlY7HrXpIkXps="

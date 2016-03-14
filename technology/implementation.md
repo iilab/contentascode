@@ -2,7 +2,9 @@
 title: Implementation
 ---
 
-> Also see the [status page](status) and [roadmap](status#roadmap)
+> See the **work in progress for the [docsmith](docsmith) reference implementation**
+
+> Also see the [status page](../../status) and [roadmap](../../status#roadmap)
 
 ## Developer Experience
 
@@ -13,7 +15,7 @@ Focus on allowing user to start from a project scaffold:
   - a Resource website
   - a Software documentation site 
 
-We could create repos (```contentascode-blog```, ```contentascode-wiki```, ```contentascode-website```, ```contentascode-doc```) that are ready to clone with some sensible defaults. 
+We could create repos (```contentascode-blog```, ```contentascode-wiki```, ```contentascode-site```, ```contentascode-doc```) that are ready to clone with some sensible defaults. 
 
 The default pipelines would have a travis.yml that push to a ```gh-pages``` branch.  
 
@@ -36,8 +38,8 @@ We also need to think about migration and various options to use [integrations](
 | scaffold-github-pages             | Fork and play.                           | Github | Prose        | Jekyll     | Github Pages | Github      |                  |
 | scaffold-github-jekyll-travis     | With Jekyll and Travis CI                | Github | Prose        | Jekyll     | Travis       | Github      |                  |
 | scaffold-github-metalsmith-travis | With Metalsmith and Travis CI            | Github | Prose        | Metalsmith | Travis       | Github      |                  |
-| scaffold-jekyll-jenkins           | Open souce stack                         | Gitlab | Hosted Prose | Jekyll     | Jenkins      | Self-Hosted |                  |
-| scaffold-metalsmith-gitlabci      | Open souce stack with metalsmith         | Gitlab | Hosted Prose | Jekyll     | Gitlab CI    | Self-Hosted |                  |
+| scaffold-jekyll-jenkins           | Open source stack                        | Gitlab | Hosted Prose | Jekyll     | Jenkins      | Self-Hosted |                  |
+| scaffold-metalsmith-gitlabci      | Open source stack with metalsmith        | Gitlab | Hosted Prose | Jekyll     | Gitlab CI    | Self-Hosted |                  |
 | infra-heroku                      | Push to deploy micro-service infra       | Gitlab | Hosted Prose | Jekyll     | Jenkins      | Heroku      | Single container |
 | infra-docker                      | Docker single server micro-service infra |        |              |            |              |             | Multi-container  |
 | infra-ansible                     | Distributed micro-service infra          |        |              |            |              |             | Multi-server     |

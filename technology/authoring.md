@@ -26,7 +26,7 @@ The authoring environment should be:
 
 |                                                          | Markdown |  Git   | Inplace | Active |
 | -------------------------------------------------------- | -------- | ------ | ------- | ------ |
-| [Prose](https://prose.io)                                | Yes      | github | No      | No     |
+| [Prose](http://prose.io)                                | Yes      | github | No      | No     |
 | [Gitbook](https://www.gitbook.com/editor)                | Yes      | git    | No      | Yes    |
 | [Dillinger](https://github.com/joemccann/dillinger)      | Yes      | github | No      |        |
 | [Aloha](http://www.alohaeditor.org/demo/aloha-ui/)       |          |        | Yes     |        |

@@ -3,16 +3,16 @@ layout: page
 title: Technology
 ---
 
-> Also see the [status page](status) and [roadmap](status#roadmap)
+> Also see the [status page](../status) and [roadmap](../status#roadmap)
 
 The following sub-pages describe the various technology related aspect of the content as code project
 
 * Workflow Components
   * [Authoring](authoring)
   * [Translation](translation)
-  * [Collaboration](collaboration)
-  * [Management](management)
-  * [Reuse](reuse)
+  * [Collaboration]()
+  * [Management]()
+  * [Reuse]()
 * [Implementation](implementation)
 * [Existing Approaches](existing) : Descriptions of existing approaches among project partners. 
 * [Inspiration](inspiration) from other projects
