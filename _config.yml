@@ -37,7 +37,6 @@ gems:
   - jekyll-gist
 safe: false
 lsi: false
-#pygments: true
 exclude:
   - README.md
   - Rakefile
