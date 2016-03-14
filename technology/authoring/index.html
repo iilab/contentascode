@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Authoring &middot; Content as Code
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/contentascode/public/css/poole.css">
+  <link rel="stylesheet" href="/contentascode/public/css/syntax.css">
+  <link rel="stylesheet" href="/contentascode/public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <!--
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/contentascode/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/contentascode/public/favicon.ico"> -->
+  <link rel="icon" type="image/svg+xml" href="images/icon.svg">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/contentascode/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/contentascode">
+          Content as Code
+        </a>
+      </h1>
+      <p class="lead">Developing workflows and technology to improve content re-use and maintainability.</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/contentascode/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/contentascode/approach/">Approach</a>
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/contentascode/partners/">Partners</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/contentascode/status/">Status</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/contentascode/technology/">Technology</a>
+          
+        
+      
+        
+          
+        
+      
+
+      <a class="sidebar-nav-item" href="">GitHub project</a>
+
+    </nav>
+
+    <p>&copy; 2016. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container">
+
+    <div>
+      
+      <small>
+        <div style="float:left"><a href="/contentascode/">Home</a>
+        
+          
+            / <a href="/contentascode/technology/">Technology</a>
+          
+        
+          
+            / Authoring
+          
+        
+        </div>
+
+        <div style="float:right"><em><a href="https://github.com/iilab/contentascode/edit/1f800bad198a5ea0378d061008309ceca05384f9/technology/authoring.md">Edit this page</a> - <a href="https://github.com/iilab/contentascode/commits/1f800bad198a5ea0378d061008309ceca05384f9/technology/authoring.md">View page history</a> - <a href="https://github.com/iilab/contentascode/tree/1f800bad198a5ea0378d061008309ceca05384f9/technology/authoring.md">View page source</a></em>
+        </div>
+      </small>
+    </div>
+
+    <div class="page" style="clear:both">
+      <h1 class="page-title">Authoring</h1>
+      <blockquote>
+  <p><a href="https://github.com/iilab/contentascode/issues/5">Contribute your ideas and follow the discussion about the choice of authoring environment</a></p>
+</blockquote>
+
+<ul id="markdown-toc">
+  <li><a href="#criteria" id="markdown-toc-criteria">Criteria</a></li>
+  <li><a href="#feature-gaps" id="markdown-toc-feature-gaps">Feature Gaps</a>    <ul>
+      <li><a href="#non-negotiables" id="markdown-toc-non-negotiables">Non negotiables</a></li>
+      <li><a href="#nice-to-haves--possible-easy-wins" id="markdown-toc-nice-to-haves--possible-easy-wins">Nice to haves / Possible Easy Wins</a></li>
+      <li><a href="#unicorns" id="markdown-toc-unicorns">Unicorns</a></li>
+    </ul>
+  </li>
+  <li><a href="#analysis" id="markdown-toc-analysis">Analysis</a>    <ul>
+      <li><a href="#prose" id="markdown-toc-prose">Prose</a></li>
+      <li><a href="#dillinger" id="markdown-toc-dillinger">Dillinger</a></li>
+      <li><a href="#aloha" id="markdown-toc-aloha">Aloha</a></li>
+      <li><a href="#section" id="markdown-toc-section">…</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="criteria">Criteria</h2>
+
+<p>The authoring environment should be:</p>
+
+<ul>
+  <li><strong>Open source</strong></li>
+  <li>Running in the <strong>browser</strong></li>
+</ul>
+
+<p>6 potential candidate software are considered with these additional criteria:</p>
+
+<ul>
+  <li><strong>Markdown support</strong></li>
+  <li><strong>Git support</strong></li>
+  <li><strong>Inplace editing</strong></li>
+  <li><strong>Actively maintained</strong></li>
+  <li><strong>Extensible</strong>, it should be easy to add functionalities. See <a href="#analysis">Analysis below</a></li>
+</ul>
+
+<hr />
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Markdown</th>
+      <th>Git</th>
+      <th>Inplace</th>
+      <th>Active</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="http://prose.io">Prose</a></td>
+      <td>Yes</td>
+      <td>github</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.gitbook.com/editor">Gitbook</a></td>
+      <td>Yes</td>
+      <td>git</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/joemccann/dillinger">Dillinger</a></td>
+      <td>Yes</td>
+      <td>github</td>
+      <td>No</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="http://www.alohaeditor.org/demo/aloha-ui/">Aloha</a></td>
+      <td> </td>
+      <td> </td>
+      <td>Yes</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="http://sofish.github.io/pen/">Pen Editor</a></td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td><a href="http://html5demos.com/contenteditable">ContentEditable</a></td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="feature-gaps">Feature Gaps</h2>
+
+<p>Based on the <a href="../../approach#design-goals">design goals</a> the following features should be implemented:</p>
+
+<h3 id="non-negotiables">Non negotiables</h3>
+
+<ul>
+  <li><strong>Media</strong>: Prose for instance manages media if in a single folder. Should have some library features.</li>
+  <li><strong>Links</strong>: Are too easy to break, or complicated to create. Should be checked client side.</li>
+  <li><strong>Metadata</strong>: Even if content is made of several blocks (including reused blocks), they should be invisible and be previewable as a whole, carry invisible metadata and allow various degrees of structure to be enforced.</li>
+</ul>
+
+<h3 id="nice-to-haves--possible-easy-wins">Nice to haves / Possible Easy Wins</h3>
+
+<ul>
+  <li><strong>Iconography</strong>: Having an icon library like glyphicons or font-awesome would be… not bad.</li>
+  <li><strong>Forms</strong>: After all that’s what GFM <code class="highlighter-rouge">- [ ]</code> are.</li>
+  <li><strong>Diagrams</strong>: Mermaid is where it’s at.</li>
+  <li><strong>Offline</strong>: Work offline or with an unhosted approach (remote storage git layer?)</li>
+</ul>
+
+<h3 id="unicorns">Unicorns</h3>
+
+<p>Let’s say goodbye to google docs.</p>
+
+<ul>
+  <li><strong>Realtime collaboration</strong>: Substance where have you gone… OT over Git please.</li>
+  <li><strong>Spreadsheet editing</strong>: Quip style of course. There are a number of good looking spreadsheet.js approaches.</li>
+</ul>
+
+<h2 id="analysis">Analysis</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Offline</th>
+      <th>Desktop</th>
+      <th>PDF</th>
+      <th>Dropbox</th>
+      <th>G Drive</th>
+      <th>Distraction free</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Prose</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Gitbook</td>
+      <td> </td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td> </td>
+      <td>Yes</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Dillinger</td>
+      <td>Yes</td>
+      <td> </td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Aloha</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Pen Edit</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Yes</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>ContentEditable</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Yes</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="prose">Prose</h3>
+
+<h3 id="dillinger">Dillinger</h3>
+
+<p>AngularJS - HTML enhanced for web apps!<br />
+Ace Editor - awesome web-based text editor<br />
+Marked - a super fast port of Markdown to JavaScript<br />
+Twitter Bootstrap - great UI boilerplate for modern web apps<br />
+node.js - evented I/O for the backend<br />
+Express - fast node.js network app framework @tjholowaychuk<br />
+Gulp - the streaming build system<br />
+keymaster.js - awesome keyboard handler lib by @thomasfuchs<br />
+jQuery - duh</p>
+
+<h3 id="aloha">Aloha</h3>
+
+<h3 id="section">…</h3>
+
+    </div>
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Existing Approaches &middot; Content as Code
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/contentascode/public/css/poole.css">
+  <link rel="stylesheet" href="/contentascode/public/css/syntax.css">
+  <link rel="stylesheet" href="/contentascode/public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <!--
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/contentascode/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/contentascode/public/favicon.ico"> -->
+  <link rel="icon" type="image/svg+xml" href="images/icon.svg">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/contentascode/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/contentascode">
+          Content as Code
+        </a>
+      </h1>
+      <p class="lead">Developing workflows and technology to improve content re-use and maintainability.</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/contentascode/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/contentascode/approach/">Approach</a>
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/contentascode/partners/">Partners</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/contentascode/status/">Status</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/contentascode/technology/">Technology</a>
+          
+        
+      
+        
+          
+        
+      
+
+      <a class="sidebar-nav-item" href="">GitHub project</a>
+
+    </nav>
+
+    <p>&copy; 2016. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container">
+
+    <div>
+      
+      <small>
+        <div style="float:left"><a href="/contentascode/">Home</a>
+        
+          
+            / <a href="/contentascode/technology/">Technology</a>
+          
+        
+          
+            / Existing
+          
+        
+        </div>
+
+        <div style="float:right"><em><a href="https://github.com/iilab/contentascode/edit/1f800bad198a5ea0378d061008309ceca05384f9/technology/existing.md">Edit this page</a> - <a href="https://github.com/iilab/contentascode/commits/1f800bad198a5ea0378d061008309ceca05384f9/technology/existing.md">View page history</a> - <a href="https://github.com/iilab/contentascode/tree/1f800bad198a5ea0378d061008309ceca05384f9/technology/existing.md">View page source</a></em>
+        </div>
+      </small>
+    </div>
+
+    <div class="page" style="clear:both">
+      <h1 class="page-title">Existing Approaches</h1>
+      <ul id="markdown-toc">
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+  <li><a href="#interoperability-approaches" id="markdown-toc-interoperability-approaches">Interoperability approaches</a>    <ul>
+      <li><a href="#security-in-a-box" id="markdown-toc-security-in-a-box">Security in a Box.</a></li>
+      <li><a href="#umbrella" id="markdown-toc-umbrella">Umbrella.</a></li>
+      <li><a href="#story-maker" id="markdown-toc-story-maker">Story Maker</a></li>
+      <li><a href="#panic-button" id="markdown-toc-panic-button">Panic Button</a></li>
+      <li><a href="#totem" id="markdown-toc-totem">TOTEM</a></li>
+      <li><a href="#open-mentoring" id="markdown-toc-open-mentoring">Open Mentoring</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="overview">Overview</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Content Format</th>
+      <th>Content Authoring</th>
+      <th>Content Publication</th>
+      <th>Content Delivery</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SIAB</td>
+      <td>Wyswiwyg</td>
+      <td>Drupal</td>
+      <td>Drupal</td>
+      <td>Drupal Web</td>
+    </tr>
+    <tr>
+      <td>Umbrella</td>
+      <td>Markdown</td>
+      <td>Manual</td>
+      <td>SQL -&gt; SQlite DB</td>
+      <td>Native Android</td>
+    </tr>
+    <tr>
+      <td>Story Maker</td>
+      <td>YAML</td>
+      <td>Git / tx</td>
+      <td>YAML -&gt; Zipped JSON (Python)</td>
+      <td>Native Android (StoryPath/Liger)</td>
+    </tr>
+    <tr>
+      <td>SSD</td>
+      <td>?</td>
+      <td>Drupal</td>
+      <td>Drupal</td>
+      <td>Drupal Web</td>
+    </tr>
+    <tr>
+      <td>Panic Button</td>
+      <td>Markdown</td>
+      <td>Prose / tx</td>
+      <td>md -&gt; JSON (Jekyll)</td>
+      <td>Native Android (custom)</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>SIAB uses Drupal and aims to publish or manage content as markdown files. Possibly evolving towards a static Markdown files, possibly evolving to provide a Content API. https://github.com/securityinabox/siabguide</li>
+  <li>Umbrella is a native Android app, the content is generated from csv files into an asset database (probably sqlite) in the APK. https://github.com/securityfirst/Umbrella_android</li>
+  <li>Story Maker is an Android app using the StoryPath (formerly liger) library to load content packs stored as YAML files. There is a transifex workflow but I’m not sure about how the content is authored. https://github.com/StoryMaker/content-packs https://github.com/StoryMaker/storypath</li>
+  <li>EFF uses Drupal. The repo doesn’t seem to have the content of the guide. https://github.com/EFForg/ssd</li>
+  <li>Panic Button is a native Android app using a custom made JSON file parser to generate its interface (similar but less mature concept than StoryPath). Content is authored in Prose as Markdown and Jekyll generates the JSON files. There’s an ongoing effort to interop with Transifex.</li>
+  <li>Digital First Aid Kit’s source is a git repository of markdown files. Not sure about how the website and printed versions are generated. https://github.com/RaReNet/DFAK</li>
+  <li>Level Up uses Drupal. No source code or content I could find.</li>
+</ul>
+
+<h2 id="interoperability-approaches">Interoperability approaches</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Interop Maturity</th>
+      <th>Rationale</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SIAB</td>
+      <td>++</td>
+      <td>Markdown in Git / Close to Content API</td>
+    </tr>
+    <tr>
+      <td>Umbrella</td>
+      <td>-</td>
+      <td>CSV / Not Git</td>
+    </tr>
+    <tr>
+      <td>Story Maker</td>
+      <td>+++</td>
+      <td>Spec and Library</td>
+    </tr>
+    <tr>
+      <td>SSD</td>
+      <td>-</td>
+      <td>No content source ?</td>
+    </tr>
+    <tr>
+      <td>Panic Button</td>
+      <td>+</td>
+      <td>Markdown in Git</td>
+    </tr>
+    <tr>
+      <td>Digital First Aid Kit</td>
+      <td>+</td>
+      <td>Markdown in Git</td>
+    </tr>
+    <tr>
+      <td>Level Up</td>
+      <td>–</td>
+      <td>No content source / No repo</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="security-in-a-box">Security in a Box.</h3>
+
+<p>Export from SIAB:</p>
+
+<ul>
+  <li>Ideally access Drupal Nodes through a granular API (at the level of sections, community snippets), keep track of upstream last modified date and translation dependencies to flag downstream update needs and generate/transform into static source for content packs.</li>
+</ul>
+
+<p>Import in SIAB:</p>
+
+<ul>
+  <li>Drupal Remote Entity or Web Service Data module consuming a statically generated</li>
+</ul>
+
+<p>Integration Path</p>
+
+<ul>
+  <li>Possible to reuse Open Mentoring/StoryPath approach to generate content packs from SIAB to create a SIAB Mobile App.</li>
+</ul>
+
+<h3 id="umbrella">Umbrella.</h3>
+
+<p>Export from Umbrella:</p>
+
+<ul>
+  <li>Directly by transforming source csv files</li>
+</ul>
+
+<p>Import in Umbrella:</p>
+
+<ul>
+  <li>Exporting Open Mentoring Content Packs as Umbrella compatible CSV</li>
+</ul>
+
+<p>Integration Path</p>
+
+<ul>
+  <li>Umbrella could reuse a Content Pack approach and propose to StoryPath to integrate Checklist in the spec</li>
+</ul>
+
+<h3 id="story-maker">Story Maker</h3>
+
+<p>Export/Import from Story Maker</p>
+
+<ul>
+  <li>Compatibility with OBB Content Pack binaries should mean that they can just be an additional source to download from.</li>
+</ul>
+
+<p>Integration Path</p>
+
+<ul>
+  <li>Working with StoryPath to upstream different approaches to content management and developing NativeScript/Cordova plugins might pay off.</li>
+</ul>
+
+<h3 id="panic-button">Panic Button</h3>
+
+<p>To be discussed but if the Panic Button help section was rewritten to allow loading StoryPath content packs that would probably be a good thing.</p>
+
+<h3 id="totem">TOTEM</h3>
+
+<p>Interop with practical tests is a strong lead.</p>
+
+<h3 id="open-mentoring">Open Mentoring</h3>
+
+<h4 id="content-requirements">Content Requirements</h4>
+
+<ul>
+  <li>Git managed static content approach</li>
+  <li>Transifex workflow</li>
+  <li>Known interop path with <em>all</em> content ecosystem</li>
+</ul>
+
+<h4 id="tech-options">Tech Options</h4>
+
+<p>Format</p>
+
+<ul>
+  <li>Markdown with YAML Frontmatter in smaller chunks than StoryMaker Content Packs (to allow markdown bodies in cards)</li>
+</ul>
+
+<p>Authoring</p>
+
+<ul>
+  <li>Prose</li>
+</ul>
+
+<p>Publication</p>
+
+<ul>
+  <li>Maybe Liger content pack interop?</li>
+</ul>
+
+<p>Delivery</p>
+
+<ul>
+  <li>Native Android with StoryPath/Liger and different git static content publication scripts.</li>
+  <li>NativeScript App with StoryPath/Liger</li>
+  <li>NativeScript App with StoryPath/Liger compatible approach</li>
+  <li>Corbova App with StoryPath/Liger</li>
+  <li>Corbova App with StoryPath/Liger compatible approach</li>
+</ul>
+
+<p>See <a href="https://github.com/iilab/openmentoring-content/wiki">Technical Research Wiki Page</a> for more about platform choice.</p>
+
+    </div>
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Translation &middot; Content as Code
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/contentascode/public/css/poole.css">
+  <link rel="stylesheet" href="/contentascode/public/css/syntax.css">
+  <link rel="stylesheet" href="/contentascode/public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <!--
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/contentascode/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/contentascode/public/favicon.ico"> -->
+  <link rel="icon" type="image/svg+xml" href="images/icon.svg">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/contentascode/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/contentascode">
+          Content as Code
+        </a>
+      </h1>
+      <p class="lead">Developing workflows and technology to improve content re-use and maintainability.</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/contentascode/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/contentascode/approach/">Approach</a>
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/contentascode/partners/">Partners</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/contentascode/status/">Status</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/contentascode/technology/">Technology</a>
+          
+        
+      
+        
+          
+        
+      
+
+      <a class="sidebar-nav-item" href="">GitHub project</a>
+
+    </nav>
+
+    <p>&copy; 2016. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container">
+
+    <div>
+      
+      <small>
+        <div style="float:left"><a href="/contentascode/">Home</a>
+        
+          
+            / <a href="/contentascode/technology/">Technology</a>
+          
+        
+          
+            / Translation
+          
+        
+        </div>
+
+        <div style="float:right"><em><a href="https://github.com/iilab/contentascode/edit/1f800bad198a5ea0378d061008309ceca05384f9/technology/translation.md">Edit this page</a> - <a href="https://github.com/iilab/contentascode/commits/1f800bad198a5ea0378d061008309ceca05384f9/technology/translation.md">View page history</a> - <a href="https://github.com/iilab/contentascode/tree/1f800bad198a5ea0378d061008309ceca05384f9/technology/translation.md">View page source</a></em>
+        </div>
+      </small>
+    </div>
+
+    <div class="page" style="clear:both">
+      <h1 class="page-title">Translation</h1>
+      <ul id="markdown-toc">
+  <li><a href="#goal" id="markdown-toc-goal">Goal</a></li>
+  <li><a href="#how-panic-button-is-doing-it" id="markdown-toc-how-panic-button-is-doing-it">How Panic Button is doing it</a>    <ul>
+      <li><a href="#git-repositories" id="markdown-toc-git-repositories">Git repositories:</a></li>
+      <li><a href="#panicbuttonio-transifex-workflow" id="markdown-toc-panicbuttonio-transifex-workflow">Panicbutton.io Transifex Workflow</a></li>
+      <li><a href="#panic-button-android-app-additional-transifex-workflow" id="markdown-toc-panic-button-android-app-additional-transifex-workflow">Panic Button Android App Additional Transifex workflow</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="goal">Goal</h2>
+
+<p>Allow translation of content that is managed with static website generators (https://www.staticgen.com/)</p>
+
+<p>With this approach the de factor standard is to have what’s called a Frontmatter which is YAML included into Markdown, allowing to store metadata together with rich text. Many keys in the front matter should be translatable (title, summary, button text and what not) while others shouldn’t.</p>
+
+<p>Our approach to enable the translation of such source text with Transifex (or other standard tools) is to build a round trip transformation script which creates JSON Key Value (with language independent keys) for the documents, in order to allow their translation.</p>
+
+<h2 id="how-panic-button-is-doing-it">How Panic Button is doing it</h2>
+
+<h3 id="git-repositories">Git repositories:</h3>
+
+<ol>
+  <li><a href="https://github.com/PanicInitiative/panicbutton.io">panicbutton.io</a> (jekyll site)</li>
+  <li><a href="https://github.com/PanicInitiative/PanicButton">PanicButton</a> (Android app)</li>
+</ol>
+
+<h3 id="panicbuttonio-transifex-workflow">Panicbutton.io Transifex Workflow</h3>
+
+<h4 id="markdown-source">Markdown source</h4>
+
+<p><strong>[Status: Existing in the panicbutton.io repository]</strong></p>
+
+<p>The markdown files in the panicbutton.io Jekyll site’s _posts directory serve as the source files for the translation process. Authors use <a href="https://admin.panicbutton.io/">Prose</a> to edit the markdown source files, in English, triggering a rebuild of the site on update of a markdown post.</p>
+
+<p>Files that move from the panicbutton.io repository to the PanicButton Android app through the Transifex translation process are located in _posts/mobile and _posts/help. These relevant markdown files contain the yaml “categories” assignment “mobile” or “help”.</p>
+
+<h4 id="markdown---json-key-value-pair-conversion">Markdown -&gt; JSON Key-Value Pair conversion</h4>
+
+<p><strong>[Status: tx_md2jsonKV.py Script in progress]</strong></p>
+
+<p>Because the markdown files for panicbutton.io contain extensive amounts of yaml front matter, it is necessary to convert the files to JSON prior to sending them to Transifex. Transifex does not handle the mixed yaml/markdown source well. A push to the panicbutton.io repository triggers travis.yaml to launch the bash script, <strong>tx_md2jsonKV.py</strong>, which converts all markdown files in _posts into JSON Key-Value pairs comprising key-value pairs. <strong>tx_md2jsonKV.py</strong> builds these new JSON Key-Value files in the _locales directory.</p>
+
+<p>In this conversion process, there is one JSON file for each language, with each master JSON file containing yaml front-matter and content of that language’s markdown files. Each item of yaml front-matter represents a new key, and the markdown content also comprises one key, “content”. For example, if the folder _posts/mobile/ has ten markdown files, the resulting JSON file, <strong>mobile.json</strong>, will comprise all ten of the markdown files, each broken down into its yaml and markdown key-value pairs.</p>
+
+<h4 id="transifex-configuration">Transifex configuration</h4>
+
+<p><strong>[Status: .tx config creation in progress]</strong></p>
+
+<p>Transifex is hooked into panicbutton.io’s root in a .tx folder that contains the <a href="http://docs.transifex.com/client/config/">Transifex config file</a> (<strong>.tx/config</strong>). The config file alerts the Transifex client to files in the repository that are subject to translation in Transifex; dictates the naming convention for the returned, translated files; and sets the file format (here, Key-Value JSON).</p>
+
+<h4 id="json---transifex-registering-a-change">JSON -&gt; Transifex: Registering a change</h4>
+
+<p><strong>[Status: TXGH Integration TODO]</strong></p>
+
+<p>If the newly built JSON Key-Value files (in _locales, from <strong>tx_md2jsonKV.py</strong>) differ from the ones that they replace, <a href="https://github.com/transifex/txgh">TXGH</a>, a Sinatra-based transifex-github integration/server, registers this change to the files in _locales. It updates Transifex to show that each language’s repository is no longer 100% translated. This cues translators to update each language’s translations.</p>
+
+<h4 id="transifex-returning-translated-files-to-repository">Transifex: Returning translated files to repository</h4>
+
+<p><strong>[Status: TXGH integration TODO, python script tx_jsonKV2md.py in progress]</strong></p>
+
+<p>When a translator completes a language’s translation, and the Transifex repository registers 100% completion, TXGH pushes the newly translated JSON Key-Value files into panicbutton.io’s git repository at _locales/&lt;lang&gt;/, overwriting the files that exist in this repository (the old translations).</p>
+
+<p>This push triggers another bash script prompted by travis.yaml, <strong>tx_jsonKV2md.py</strong>, which converts the JSON Key-Value files in _locales/&lt;lang&gt;/ back into markdown. The new markdown files are placed in _posts/&lt;lang&gt;/, replacing the markdown files from the previous round of translations.</p>
+
+<h4 id="pushing-markdown-files-to-android-panic-button-app">Pushing Markdown files to Android Panic Button App</h4>
+
+<p><strong>[Status: travis.yaml cloning and pushing to Android application TODO]</strong></p>
+
+<p>On each push to the panicbutton.io dev branch, travis.yaml performs a process to transform and push relevant information to the PanicButton Android application repository. First, travis.yaml <code>git clones</code> the PanicButton Android application’s asset repository. The script then converts all of the markdown files in _posts/mobile and _posts/help (including all files in the _posts/mobile/&lt;lang&gt; and _posts/help/&lt;lang&gt; directories) into custom, PanicButton-specific JSON following templates located in /api/help.json and /api/mobile.json. These files are named <strong>mobile_&lt;lang&gt;.json</strong> and <strong>help_&lt;lang&gt;.json</strong>.</p>
+
+<p>Upon creation, the files are copied into the newly cloned PanicButton App assets directory, over-writing the now-outdated, equivalently-named files.</p>
+
+<p>Next, travis.yaml calls <code>git add -A &amp;&amp; git commit -m "Updating translations to the PanicButton Application" &amp;&amp; git push origin dev</code>. If the newly created JSON files, mobile_&lt;lang&gt;.json, differ from the previous versions (eg if the <code>git push</code> that called the script represents an updated translation), then the changes will be committed and pushed to the PanicButton Android Application’s repository. This triggers a rebuild of the app. If the JSON files, mobile_&lt;lang&gt;.json, have not changed, then the cloned directory will not register any change on <code>git add -A</code>, and so the <code>git commit &amp;&amp; git push origin dev</code> will fail without triggering an error.</p>
+
+<h3 id="panic-button-android-app-additional-transifex-workflow">Panic Button Android App Additional Transifex workflow</h3>
+
+<h4 id="stringsxml">strings.XML</h4>
+
+<p><strong>[Status: .tx config creation in progress. TXGH integration TODO]</strong></p>
+
+<p>The PanicButton Android app contains an additional Transifex workflow. The app has translatable material independent of the panicbutton.io source files in the <strong>/src/main/res/values/strings.xml</strong> file.</p>
+
+<p>Thus, the PanicButton Android Application repository also houses a .tx folder with its own config file, which dictates the translation source, resulting file names, and format for <strong>strings.xml</strong>.</p>
+
+<p>A TXGH integration in the PanicButton app repository will register a pushed change in the <strong>strings.xml</strong> file, updating <strong>strings.xml</strong> in the Transifex repository to show that translation is no longer complete and alerting translators that an update to the translation is necessary.</p>
+
+<p>Upon completion of the translation, TXGH will return the translated files to the PanicButton repository, placing them in the directories <strong>/src/main/res/values-&lt;lang&gt;</strong>, with each language’s file named <strong>strings.xml</strong>. Existing translations in each of these directories will be overwritten by this action from TXGH. The app will be rebuilt upon return of new files.</p>
+
+    </div>
+
+    </div>
+
+  </body>
+</html>

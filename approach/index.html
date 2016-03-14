@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Approach &middot; Content as Code
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/contentascode/public/css/poole.css">
+  <link rel="stylesheet" href="/contentascode/public/css/syntax.css">
+  <link rel="stylesheet" href="/contentascode/public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <!--
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/contentascode/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/contentascode/public/favicon.ico"> -->
+  <link rel="icon" type="image/svg+xml" href="images/icon.svg">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/contentascode/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/contentascode">
+          Content as Code
+        </a>
+      </h1>
+      <p class="lead">Developing workflows and technology to improve content re-use and maintainability.</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/contentascode/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item active" href="/contentascode/approach/">Approach</a>
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/contentascode/partners/">Partners</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/contentascode/status/">Status</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/contentascode/technology/">Technology</a>
+          
+        
+      
+        
+          
+        
+      
+
+      <a class="sidebar-nav-item" href="">GitHub project</a>
+
+    </nav>
+
+    <p>&copy; 2016. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container">
+
+    <div>
+      
+      <small>
+        <div style="float:left"><a href="/contentascode/">Home</a>
+        
+          
+            / Approach
+          
+        
+        </div>
+
+        <div style="float:right"><em><a href="https://github.com/iilab/contentascode/edit/1f800bad198a5ea0378d061008309ceca05384f9/approach.md">Edit this page</a> - <a href="https://github.com/iilab/contentascode/commits/1f800bad198a5ea0378d061008309ceca05384f9/approach.md">View page history</a> - <a href="https://github.com/iilab/contentascode/tree/1f800bad198a5ea0378d061008309ceca05384f9/approach.md">View page source</a></em>
+        </div>
+      </small>
+    </div>
+
+    <div class="page" style="clear:both">
+      <h1 class="page-title">Approach</h1>
+        <blockquote>
+  <p><a href="https://github.com/iilab/contentascode/issues/1">Contribute your ideas and discuss the approach of Content as Code</a></p>
+</blockquote>
+
+<ul id="markdown-toc">
+  <li><a href="#design-goals" id="markdown-toc-design-goals">Design Goals</a>    <ul>
+      <li><a href="#focused-writing" id="markdown-toc-focused-writing">Focused Writing</a></li>
+      <li><a href="#localisation-and-translation" id="markdown-toc-localisation-and-translation">Localisation and translation</a></li>
+      <li><a href="#low-barrier-to-collaboration" id="markdown-toc-low-barrier-to-collaboration">Low barrier to collaboration</a></li>
+      <li><a href="#track-changes-and-manage-contributions" id="markdown-toc-track-changes-and-manage-contributions">Track changes and manage contributions</a></li>
+      <li><a href="#content-reuse" id="markdown-toc-content-reuse">Content Reuse</a></li>
+      <li><a href="#multiple-publication-channels" id="markdown-toc-multiple-publication-channels">Multiple publication channels</a></li>
+    </ul>
+  </li>
+  <li><a href="#content-as-code-approach" id="markdown-toc-content-as-code-approach">Content as Code Approach</a>    <ul>
+      <li><a href="#faq" id="markdown-toc-faq">FAQ</a>        <ul>
+          <li><a href="#what-does-post-cms-means" id="markdown-toc-what-does-post-cms-means">What does Post-CMS means?</a></li>
+          <li><a href="#why-use-markdown-and-not-asciidocrestructuretextilewiki-syntax" id="markdown-toc-why-use-markdown-and-not-asciidocrestructuretextilewiki-syntax">Why use Markdown and not AsciiDoc/ReStructure/Textile/Wiki syntax?</a></li>
+          <li><a href="#why-not-use-xmljsonyaml-as-the-storage-format" id="markdown-toc-why-not-use-xmljsonyaml-as-the-storage-format">Why not use XML/JSON/YAML… as the storage format?</a></li>
+          <li><a href="#markdown--yaml-or-whatever-format-you-design-to-store-contentdata-is-not-proven" id="markdown-toc-markdown--yaml-or-whatever-format-you-design-to-store-contentdata-is-not-proven">Markdown + YAML or whatever format you design to store content/data is not proven!</a></li>
+          <li><a href="#why-not-create-a-word-plugin" id="markdown-toc-why-not-create-a-word-plugin">Why not create a Word plugin?</a></li>
+          <li><a href="#what-about-open-formats-for-multimedia-content" id="markdown-toc-what-about-open-formats-for-multimedia-content">What about open formats for multimedia content</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="design-goals">Design Goals</h2>
+
+<p>These goals articulate our user-centric focus applied to the author/editor/translator/publisher experiences.</p>
+
+<h3 id="focused-writing">Focused Writing</h3>
+
+<blockquote>
+  <p>The ability for authors to focus on their content and not have to think about the technology is a design goal.</p>
+</blockquote>
+
+<p>The tools should disappear (literally with distraction free modes, or when using tools that are so familiar to us that we don’t pay attention to them anymore - like the keyboard, or… Word).</p>
+
+<p>Being able to let authors use the tools that allow them to be most productive and happy is a key goal of Content as Code. Allowing a diversity of tools to be used in this workflow is a design goal, but promoting and prioritising tools that are open source, modular and well designed is part of the implementation approach.</p>
+
+<p>Read more about the <a href="../technology/authoring">technology approach for content authoring</a></p>
+
+<h3 id="localisation-and-translation">Localisation and translation</h3>
+
+<blockquote>
+  <p>Integrating translation and localisation deeply in the workflow and without adding complexity is a design goal.</p>
+</blockquote>
+
+<p>Read more about the <a href="../technology/translation">technology approach for translation</a></p>
+
+<h3 id="low-barrier-to-collaboration">Low barrier to collaboration</h3>
+
+<blockquote>
+  <p>Allowing others to spot problems, develop new content or adapt content for new purposes is a design goal.</p>
+</blockquote>
+
+<p>This should include the collaborative creation, adaptation and translation of content in sprints, remotely or with other innovative approaches.</p>
+
+<h3 id="track-changes-and-manage-contributions">Track changes and manage contributions</h3>
+
+<blockquote>
+  <p>Maintain editorial coherence by making it easy to track, review and comment on changes coming from a range of sources and improving the editor’s experience is a design goal.</p>
+</blockquote>
+
+<h3 id="content-reuse">Content Reuse</h3>
+
+<blockquote>
+  <p>Allowing the discovery, tracking and updating of content used from other sources is a design goal.</p>
+</blockquote>
+
+<p>Multimedia content, internal links or external links should be easy to navigate and include in content.</p>
+
+<h3 id="multiple-publication-channels">Multiple publication channels</h3>
+
+<blockquote>
+  <p>Publishing to the web, books, mobile apps or other channels is a design goal.</p>
+</blockquote>
+
+<h1 id="content-as-code-approach">Content as Code Approach</h1>
+
+<p>There is a problem with content management in a <a href="#what-does-post-cms-means">Post-CMS</a> context. For projects which have complex editorial workflows, adopting more lightweight approaches such as static site generation is still difficult, can create friction and are lacking in functionality.</p>
+
+<p>Software engineering as a discipline, has been dealing with complex contribution processes requiring to create, move, merge, transform large quantities of code. This has led to the creation of tool to be able to trace the history of changes, allow very large team contributing to similar code bases and manage, reuse vast amounts of other project’s code, track changes and organise review by peers, manage documentation and its obsolecence, translations of manuals and software, test problems as early as possible in order to rapidly and frequently build software artifacts that can be deployed across servers, computer and mobile devices.</p>
+
+<p><a href="../images/dependencies.png"><img src="../images/dependencies.png" alt="dependencies" /></a></p>
+
+<p>Applying these concepts and lessons to editorial workflows is not trivial and requires a strong focus on author experience (as well as editor and translator experience).</p>
+
+<h2 id="faq">FAQ</h2>
+
+<h3 id="what-does-post-cms-means">What does Post-CMS means?</h3>
+
+<p>That we’ve been seduced and then disappointed by CMSes which add too much complexity and therefore create problems of maintainability of content.</p>
+
+<h3 id="why-use-markdown-and-not-asciidocrestructuretextilewiki-syntax">Why use Markdown and not AsciiDoc/ReStructure/Textile/Wiki syntax?</h3>
+
+<p>That’s a question of taste and we’ll focus on Markdown first but we’ll implement other syntaxes (and focus on software libraries that can switch syntaxes) and will accept contributions that go in this direction.</p>
+
+<h3 id="why-not-use-xmljsonyaml-as-the-storage-format">Why not use XML/JSON/YAML… as the storage format?</h3>
+
+<p>Having a format which is has a track record for data storage seems like a natural direction to go to, however the popularity of Markdown and of formats like YAML (both used as the data format in this format, like in Jekyll and other static website generators) is based on the fact that the representation of the content/data is elegant mainly because it removes clutter/noise and it is more resilient to syntax errors (which some could see as allowing more data corruptions).</p>
+
+<p>With this approach the thinking is that data corruptions will be caught by a quick feedback loop to the author, or simply by hiding structured data.</p>
+
+<h3 id="markdown--yaml-or-whatever-format-you-design-to-store-contentdata-is-not-proven">Markdown + YAML or whatever format you design to store content/data is not proven!</h3>
+
+<p>That’s not a question but ok, we understand why you’re excited or worried about this. It’s true that Markdown has a history of causing pains because of loose specifications but that’s pretty much settled with the <a href="http://commonmark.org/">CommonMark standard</a> with a wide range of <a href="https://github.com/jgm/CommonMark/wiki/List-of-CommonMark-Implementations">compliant implementations</a>. Also what we’re proposing is to introduce block-level metadata or <a href="https://github.com/iilab/contentascode/issues/12"><code class="highlighter-rouge">middlematter</code></a>. There is a tradition of deriving markdown and adding flavors. This has led to a ecosystem of sometimes competing approaches to do similar things (syntax for tables is a good example of this). We’ll make sure to follow this tradition and generate a strong specification for our flavor. Given that the existing practice is already to mix Markdown and YAML, Markdown probably only needs to be extended very minimally in able to allow YAML to be included inline, in a way that is elegant and minimises clutter.</p>
+
+<p>This integration should result in 2 well defined approaches to be used as a storage format and provide equivalence to other better known formats.</p>
+
+<h3 id="why-not-create-a-word-plugin">Why not create a Word plugin?</h3>
+
+<p>Yes! There are existing plugins to manage Markdown in Word and this fits our goals to be interoperable and extensible.</p>
+
+<h3 id="what-about-open-formats-for-multimedia-content">What about open formats for multimedia content</h3>
+
+<p>Yes! We love SVG and projects like MermaidJS which are promising ways to develop graphical content which can be reused, remixed and composed.</p>
+
+
+
+    </div>
+
+    </div>
+
+  </body>
+</html>

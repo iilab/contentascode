@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      docsmith &middot; Content as Code
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/contentascode/public/css/poole.css">
+  <link rel="stylesheet" href="/contentascode/public/css/syntax.css">
+  <link rel="stylesheet" href="/contentascode/public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <!--
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/contentascode/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/contentascode/public/favicon.ico"> -->
+  <link rel="icon" type="image/svg+xml" href="images/icon.svg">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/contentascode/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/contentascode">
+          Content as Code
+        </a>
+      </h1>
+      <p class="lead">Developing workflows and technology to improve content re-use and maintainability.</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/contentascode/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/contentascode/approach/">Approach</a>
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/contentascode/partners/">Partners</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/contentascode/status/">Status</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/contentascode/technology/">Technology</a>
+          
+        
+      
+        
+          
+        
+      
+
+      <a class="sidebar-nav-item" href="">GitHub project</a>
+
+    </nav>
+
+    <p>&copy; 2016. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container">
+
+    <div>
+      
+      <small>
+        <div style="float:left"><a href="/contentascode/">Home</a>
+        
+          
+            / <a href="/contentascode/technology/">Technology</a>
+          
+        
+          
+            / <a href="/contentascode/technology/implementation/">Implementation</a>
+          
+        
+          
+            / Docsmith
+          
+        
+        </div>
+
+        <div style="float:right"><em><a href="https://github.com/iilab/contentascode/edit/1f800bad198a5ea0378d061008309ceca05384f9/technology/implementation/docsmith.md">Edit this page</a> - <a href="https://github.com/iilab/contentascode/commits/1f800bad198a5ea0378d061008309ceca05384f9/technology/implementation/docsmith.md">View page history</a> - <a href="https://github.com/iilab/contentascode/tree/1f800bad198a5ea0378d061008309ceca05384f9/technology/implementation/docsmith.md">View page source</a></em>
+        </div>
+      </small>
+    </div>
+
+    <div class="page" style="clear:both">
+      <h1 class="page-title">docsmith</h1>
+      <blockquote>
+  <p>An npm module called <a href="https://www.npmjs.com/package/docsmith">docsmith</a> has been published with the following README.md</p>
+</blockquote>
+
+<h1 id="this-readme-is-out-of-date-and-should-benefit-from-dependency-tracking-see-the-current-readme-herehttpsgithubcomcontentascodedocsmithblobmasterreadmemd">This README is out of date and should benefit from dependency tracking! See the <a href="https://github.com/contentascode/docsmith/blob/master/README.md">current README here</a></h1>
+
+<p>Content as Code aims to make it easy to start a website in just a few steps but also build complex content publishing pipelines. It develops best practices to managing content workflows inspired from how code is managed in large collaborative software engineering projects.</p>
+
+<p><strong>docsmith</strong> implements the Content as Code framework using metal<em>smith</em>, pan<em>doc</em> and <em>doc</em>ker microservice deployment.</p>
+
+<h2 id="getting-started">Getting Started</h2>
+
+<p>The simplest way to get started is to fork one of our sample repos on github:<br />
+ - https://github.com/contentascode/ blog: A template for a simple blog<br />
+ - https://github.com/contentascode/ wiki: A template for a wiki<br />
+ - https://github.com/contentascode/ doc: A template for software documentaiton<br />
+ - https://github.com/contentascode/ site: A template for a simple website</p>
+
+<p>You can have these templates up and running simply by <a href="">activating Github pages on your fork</a>. This will make the site available after a few minutes on http://USER.github.io/REPO where ORG is the name of the user or organisation which forked the repo, and REPO is the name of the REPO (which should be blog or site, unless you renamed it.)</p>
+
+<p>Wow, that was easy and fast. What can I do next?</p>
+
+<h3 id="use-your-own-domain-name">Use your own domain name</h3>
+
+<p>You can make your new site available on the domain name of your choice. If you have procured a domain name you can simply create a CNAME file at the base of this repository and point your DNS following these instructions.</p>
+
+<h3 id="collaboration">Collaboration</h3>
+
+<p>The Content as Code workflow uses best practices to allow different people to contribute to your content project, in the way that large software engineering projects in the open source world do it.</p>
+
+<p>The sample repos use Github (soon Prose) to help with content editing. By default, all pages of your new website have built in links to</p>
+
+<h3 id="checking-links">Checking Links</h3>
+
+<p>You can go to the next level by using another free online service (Travis CI) to build your site. This will provide you with additional features such as using validations. For instance to check that links are working or that your content is generally well formatted and readable. You can activate travis by going to travis-ci.com signing up and activating travis for your USER/REPO project.</p>
+
+<p>Is that it? Yes, now you’ll receive emails with notifications each time there is a problem with your website build, like a broken link or possible other problems with your site.</p>
+
+<p>(Open an issue to report broken link, replace with an archive.org link if broken link!)</p>
+
+<h3 id="choose-a-theme">Choose a theme</h3>
+
+<p>You can change our default website layout and theme if you have activated Travis CI in the previous step. In that case, you can edit the docsmith.yml file and change the theme to another content as code enabled jekyll theme we support.</p>
+
+<h3 id="what-next">What next?</h3>
+
+<p>We’re planning to implement many more features with a content as code approach for instance doing diagrams, interactive content, or integration with and migration from your existing content management system.</p>
+
+<p>If you want to go deeper into <strong>docsmith</strong> and content as code, you can also help us develop the command line tool we have started designing below which will help more advanced users with more sophisticated content management needs. It is based on a modular approach</p>
+
+<h2 id="docsmith-cli-tool">Docsmith CLI tool</h2>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">npm install -g docsmith</code> : installs content CLI tool.</p>
+  </li>
+  <li><code class="highlighter-rouge">docsmith init</code>: Or <code class="highlighter-rouge">docsmith init &lt;template&gt;</code> like <code class="highlighter-rouge">docsmith init blog</code>, <code class="highlighter-rouge">docsmith init doc</code> or <code class="highlighter-rouge">docsmith init wiki</code>.</li>
+  <li><code class="highlighter-rouge">docsmith install</code> : in a repo would read content.yml and create package.json, metalsmith.json and docker-compose.json and run necessary installations (npm install,…).</li>
+  <li><code class="highlighter-rouge">docsmith install validator</code> : Install default plugin suite in validator (linkchecker) or the one specified in the docsmith.yml file.</li>
+  <li>
+    <p><code class="highlighter-rouge">docsmith install validator styleguide</code>: Install specific plugin (and updates the yml file)</p>
+  </li>
+  <li><code class="highlighter-rouge">docsmith build</code>: Build the content locally.</li>
+  <li><code class="highlighter-rouge">docsmith serve</code>: Serve the content locally. (Should probably open a console and allow to <code class="highlighter-rouge">pull</code>,<code class="highlighter-rouge">update</code> or <code class="highlighter-rouge">pull</code> within it)</li>
+  <li>
+    <p><code class="highlighter-rouge">docsmith publish</code>: Publishes the content (and configure and/or deploy needed microservices).</p>
+  </li>
+  <li><code class="highlighter-rouge">docsmith load/pull</code> : Get local content updates</li>
+  <li><code class="highlighter-rouge">docsmith load/pull &lt;version&gt;</code>: Get specific version.</li>
+  <li><code class="highlighter-rouge">docsmith update</code>: Get remote content dependency updates.</li>
+  <li><code class="highlighter-rouge">docsmith save/push</code> : Push content source updates and advertise changes.</li>
+  <li><code class="highlighter-rouge">docsmith save/push &lt;version&gt;</code> : Push content source updates and advertise changes.</li>
+</ul>
+
+<p>Example <code class="highlighter-rouge">docsmith.yml</code>:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="s">source</span><span class="pi">:</span> <span class="s">.</span>                       <span class="c1"># By default uses current directory, should be able to pull a remote directory too.</span>
+<span class="s">build</span><span class="pi">:</span> <span class="s1">'</span><span class="s">github-pages'</span>           <span class="c1"># How is the build pipeline managed. could be travis, gitlab-ci, drone, local Makefile, gulp, grunt...</span>
+
+<span class="s">components</span><span class="pi">:</span>
+  <span class="s">source</span><span class="pi">:</span> <span class="s1">'</span><span class="s">github'</span>              <span class="c1"># Defaults to github could also be gitlab or a local folder or a remote url. Gollum for a wiki?</span>
+  <span class="s">transform</span><span class="pi">:</span> <span class="s1">'</span><span class="s">'</span>                 <span class="c1"># Maybe some type of pre-processing</span>
+  <span class="s">validate</span><span class="pi">:</span> <span class="s1">'</span><span class="s">'</span>                  <span class="c1"># Defaults to empty. List of validation scripts, for instance links,...</span>
+  <span class="s">editor</span><span class="pi">:</span> <span class="s1">'</span><span class="s">github'</span>              <span class="c1"># What is the content authoring environment? Could be prose, realms,... </span>
+  <span class="s">generate</span><span class="pi">:</span> <span class="s1">'</span><span class="s">github-pages'</span>      <span class="c1"># How is the site generated. Could be github-pages, jekyll, metalsmith, hugo... </span>
+  <span class="s">publish</span><span class="pi">:</span> <span class="s1">'</span><span class="s">github-pages'</span>       <span class="c1"># Where is the content hosted? </span>
+  <span class="s">discuss</span><span class="pi">:</span> <span class="s1">'</span><span class="s">github-issues'</span>      <span class="c1"># Discussion threads, comments, wiki style discuss page...</span>
+  <span class="s">review</span><span class="pi">:</span> <span class="s1">'</span><span class="s">github'</span>              <span class="c1"># Line based review like github code comments</span>
+  <span class="s">stats</span><span class="pi">:</span> <span class="s1">'</span><span class="s">piwik'</span>
+  <span class="s">dependencies</span><span class="pi">:</span> <span class="s1">'</span><span class="s">'</span>
+</code></pre>
+</div>
+
+<ul>
+  <li><code class="highlighter-rouge">docsmith modules</code> : display list of available modules.</li>
+  <li><code class="highlighter-rouge">docsmith source</code> : display current source settings.</li>
+  <li><code class="highlighter-rouge">docsmith source gitlab</code> : changes repo to gitlab.</li>
+  <li><code class="highlighter-rouge">docsmith build travis-ci</code> : changes build system to travis ci.</li>
+  <li><code class="highlighter-rouge">docsmith validate links</code> : Adds link validator module.</li>
+</ul>
+
+<h1 id="components-api">Components API</h1>
+
+<h2 id="repo">repo</h2>
+
+<h3 id="api">API</h3>
+
+<ul>
+  <li>pull: get the latest (or default) version from the content repo.</li>
+  <li>update: pulls dependencies (through git submodules or a package management approach or another yet to be developed approach)</li>
+  <li>version: get a specific version (github version tag or branch or ). From docsmith’s perspective all versions are really branches that can be worked on a later merged onto other versions aiming to pick the best merge strategy based on heuristics.</li>
+  <li>push: pushes local changes to content repo.</li>
+</ul>
+
+<h3 id="implementation">Implementation</h3>
+
+<p>Configures the build pipeline (for now metalsmith) with the proper and desired source content version. This should allow to wrap dependency management (include with git submodules if wanted).</p>
+
+<h3 id="repo-github">repo-github</h3>
+
+<ul>
+  <li>This module connects docsmith to a github repository as a content source.</li>
+  <li>Configuration options
+    <ul>
+      <li><code class="highlighter-rouge">repo</code>:
+        <ul>
+          <li><code class="highlighter-rouge">url</code> : (Required) URL of repo.</li>
+          <li><code class="highlighter-rouge">branch</code>: (Optional - Defaults to master)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="build">build</h2>
+
+<h3 id="api-1">API</h3>
+
+<ul>
+  <li>build:</li>
+  <li>watch:</li>
+</ul>
+
+<h3 id="build-github-pages">build-github-pages</h3>
+
+<ul>
+  <li>Configuration options
+    <ul>
+      <li><code class="highlighter-rouge">source</code><br />
++</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="validate">validate</h2>
+
+
+    </div>
+
+    </div>
+
+  </body>
+</html>
