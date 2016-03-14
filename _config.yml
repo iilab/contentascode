@@ -1,29 +1,18 @@
-# Dependencies
-
-markdown:         kramdown
-# markdown:         redcarpet
-
-# Permalinks
-permalink:        pretty
-
-# Setup
-title:            Content as Code
-tagline:          'Developing workflows and technology to improve content re-use and maintainability.'
-description:      'Developing workflows and technology to improve content re-use and maintainability.'
-url:              http://iilab.github.io
-baseurl:          /contentascode
-
+markdown: kramdown
+permalink: pretty
+title: Content as Code
+tagline: Developing workflows and technology to improve content re-use and maintainability.
+description: Developing workflows and technology to improve content re-use and maintainability.
+url: 'http://undefined.github.io'
+baseurl: /undefined
 author:
-  name:           'Jun Matsushita'
-  url:            https://twitter.com/iilab
-
+  name: Your Name
+  url: 'https://twitter.com/yourtwitter'
 defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
+  - scope:
+      path: ''
     values:
-      layout: "default"
-
+      layout: default
 kramdown:
   input: GFM
   auto_ids: true
@@ -31,13 +20,33 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..3
   enable_coderay: false
-
 redcarpet:
-  extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks", "lax_spacing", "smart"]
-
+  extensions:
+    - tables
+    - autolink
+    - strikethrough
+    - space_after_headers
+    - with_toc_data
+    - fenced_code_blocks
+    - lax_spacing
+    - smart
 github:
-  repo:           https://github.com/iilab/contentascode
-
+  repository_url: 'https://github.com/undefined/undefined'
 gems:
   - jekyll-sitemap
   - jekyll-gist
+safe: false
+lsi: false
+pygments: true
+exclude:
+  - README.md
+  - Rakefile
+  - Gemfile
+  - Gemfile.lock
+  - changelog.md
+  - '*.Rmd'
+  - vendor
+  - .travis.yml
+username: USER
+owner: ORG
+repo: REPO
