@@ -3,7 +3,7 @@
     "clean": "rm -rf $CONFIG_REPO",
     "build": "jekyll build -d $CONFIG_REPO",
     "test": "npm run build && echo \"Do some validations...\" && npm run test-links",
-    "test-links": "pm2 -s stop hs || true && pm2 -s delete hs || true && pm2 -f start `which hs` -- -p 8080 . && blc -r --input http://127.0.0.1:8080/$CONFIG_REPO | tee /dev/tty | grep -z '. 0 broken\\.[[:space:]]\\+Elapsed'",
+    "test-links": "pm2 -s stop hs || true && pm2 -s delete hs || true && pm2 -f start `which hs` -- -p 8080 . && blc -s -r --input http://127.0.0.1:8080/$CONFIG_REPO | tee /dev/tty | grep -z '. 0 broken\\.[[:space:]]\\+Elapsed'",
     "deploy": "npm run deploy-push",
     "deploy-push": "cd $CONFIG_REPO && git init && git config user.email \"$GIT_EMAIL\" && git config user.name \"$GIT_NAME\" && git remote add upstream https://${GH_USERNAME}:${GH_TOKEN}@github.com/${CONFIG_OWNER}/${CONFIG_REPO}.git && git fetch upstream && git reset upstream/gh-pages && touch .nojekyll && git add -A . && git commit -a -m \"Travis build $TRAVIS_BUILD_NUMBER\" && git push --quiet upstream HEAD:gh-pages\n"
   }

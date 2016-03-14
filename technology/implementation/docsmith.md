@@ -5,21 +5,21 @@ source: https://github.com/contentascode/docsmith/README.md
 
 > An npm module called [docsmith](https://www.npmjs.com/package/docsmith) has been published with the following README.md
 
-# This README is out of date and should benefit from dependency tracking! See the [current README here](https://github.com/contentascode/docsmith/README.md)
+# This README is out of date and should benefit from dependency tracking! See the [current README here](https://github.com/contentascode/docsmith/blob/master/README.md)
 
-[Content as Code](https://contentascode.io) aims to make it easy to start a website in just a few steps but also build complex content publishing pipelines. It develops best practices to managing content workflows inspired from how code is managed in large collaborative software engineering projects.
+Content as Code aims to make it easy to start a website in just a few steps but also build complex content publishing pipelines. It develops best practices to managing content workflows inspired from how code is managed in large collaborative software engineering projects.
 
-**docsmith** implements the [Content as Code](https://contentascode.io) framework using metal*smith*, pan*doc* and *doc*ker microservice deployment.
+**docsmith** implements the Content as Code framework using metal*smith*, pan*doc* and *doc*ker microservice deployment.
 
 ## Getting Started
 
 The simplest way to get started is to fork one of our sample repos on github:
- - https://github.com/contentascode/blog: A template for a simple blog
- - https://github.com/contentascode/wiki: A template for a wiki
- - https://github.com/contentascode/doc: A template for software documentaiton
- - https://github.com/contentascode/site: A template for a simple website
+ - https://github.com/contentascode/ blog: A template for a simple blog
+ - https://github.com/contentascode/ wiki: A template for a wiki
+ - https://github.com/contentascode/ doc: A template for software documentaiton
+ - https://github.com/contentascode/ site: A template for a simple website
 
-You can have these templates up and running simply by [activating Github pages on your fork](link). This will make the site available after a few minutes on http://USER.github.io/REPO where ORG is the name of the user or organisation which forked the repo, and REPO is the name of the REPO (which should be blog or site, unless you renamed it.)
+You can have these templates up and running simply by [activating Github pages on your fork](). This will make the site available after a few minutes on http://USER.github.io/REPO where ORG is the name of the user or organisation which forked the repo, and REPO is the name of the REPO (which should be blog or site, unless you renamed it.)
 
 Wow, that was easy and fast. What can I do next?
 

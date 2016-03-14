@@ -9,8 +9,9 @@ cache:
   bundler: true
   directories:
     - node_modules
+    - /home/travis/.rvm
 install:
-  - npm i pm2 http-server broken-link-checker -g
+  - npm i pm2 http-server contentascode/broken-link-checker -g
   - "rvm install $(sed 's/ruby-//g' .ruby-version)"
   - bundle install
 deploy:
@@ -23,4 +24,4 @@ env:
     - CONFIG_OWNER=iilab
     - CONFIG_REPO=contentascode
     - secure: >
-        "7iGodkRzN2rlFUeYRSU1qQ8BVA2q1LKwruF7re2gQVIt29wV55xxib1ui8Hh+Jx8JmnU5rc7hOmXzD0WZhxxifavm6CQAwrjcoAUJyUvFSXAyU4kSSAgwg4ac61SFOd3tQH2ySfiNdg2HANWp8q3Vzsv2gsWkSrts6AIRRx2b1At2CiQ+xZhHpJAALWdJ/pRJsV6fOoShxKPSJlDZur4I4yMtMnIi7nE+QziVAmt2HJsWZO5f8hSv159ejr3/lJ5/EV7DCRwzlb01k1clN3ySRjVHLjt60262Eowc10wfLeGLquu1mdP/JcUGIUtWdQoeiGb34pS+jTjgaIj1UZzlE1qLpy3Q/Q5DAZrq9QiubfqECqI1coGAN47ONA6g40+ZjTflHazq/QeQUAOTFt5wZLiR9YtH6/naaYwjZx2qXGXwfRIXdMvGICedBgF7d1+o8gb1XpWjR30LRwKdlGJoLzBY6PHwRSP2RqoCEsS6U0zKYVyUTyhadwxiej4cK0+ZqQk7h4YVm6w+RAC++4gO8iZzJDGKP2mz3nXubuKVCEwKlKOWqo0La8y2+2/0DpJ5a8dbxEiPcuUGG5YZkQkKuDG1/MX2OByuHztGqCYzHVG7o+R3PE5JkXd60MA6bXlgNQyp1ZW9Maz1wXJnjm48JpPhdFaHOvuVXyZKWjJ/zw="
+        "EhVOA4nxJl/Z678BYYA+zWxG+mEeWYtIUPZOOMe98Ia43wQCHdaw4qHuTb5/+r0+xbY1n/T1plkzunPqIIbymPELjhPcZIY/NnJBSIeb2DjJLFIQkarndrKQywS17MEJ7WYCPzDgf0ngAK21zWKR79rPbcrZ3SvM0o7S/iyzu7NYAoi2mcZ7BeTxrdU5o9AmYeJHCqqxs7+NPBMpUxZPoNPE70xn+Y+NnNOGqRcRAeEUG8BDWcv8ZjAGI64lSbQ1YMnlg3KStwBQn6U3MO2VS7/TB4FzXDh0PLw6kaGqpKlGOAUsHk+YumGKg8LPkNHZBkxW5bJa4WOgSzfu1m+C1CT+m1JxWinD006k6gG9TP2KZ1NkITG76yG4AFMAKSyc2Q2/URpP/Bnp9IV5rFGkp+Pgai0hdiRSq072nMyRf31R/RL6ErXCyxWn8Mo2cDFiiXpmg74jiLfNiGgyl7Yy/kgXsoVn5T3LLUEL+M6Lkmk3rD/cLxFns7CT/zt+WVP+q/FTqj3LcLBfcSknc8yHYZPJq4bKmouwsleQFWa28x/LArlX2kUxxmm16PMqCVdjDYYkY+9tq9HVPcwysdTAGFcSNQAs8OdRfbd3Q6IsoF7Vp9GDv07tWI1JEeQT8RXicM8gwzZecs1etokGfscuEYF9IG4bHWc6Jc8SXnpm0Sg="
