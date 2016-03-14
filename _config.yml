@@ -31,6 +31,7 @@ redcarpet:
     - lax_spacing
     - smart
 github:
+  current_branch: master
   repository_url: 'https://github.com/iilab/contentascode'
 gems:
   - jekyll-sitemap

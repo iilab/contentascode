@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "clean": "rm -rf $CONFIG_REPO",
-    "build": "jekyll build -d $CONFIG_REPO",
+    "clean": "rm -rf $CONFIG_REPO && rm _branch.yml",
+    "build": "echo \"github:\\n  current_branch: $TRAVIS_BRANCH\" > _branch.yml && jekyll build --config _config.yml,_branch.yml -d $CONFIG_REPO && rm _branch.yml\n",
     "test": "npm run build && echo \"Do some validations...\" && npm run test-links",
     "test-links": "pm2 -s stop hs || true && pm2 -s delete hs || true && pm2 -f start `which hs` -- -p 8080 . && blc -s -r --input http://127.0.0.1:8080/$CONFIG_REPO | tee /dev/tty | grep -z '. 0 broken\\.[[:space:]]\\+Elapsed'",
     "deploy": "npm run deploy-push",
