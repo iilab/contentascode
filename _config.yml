@@ -3,11 +3,11 @@ permalink: pretty
 title: Content as Code
 tagline: Developing workflows and technology to improve content re-use and maintainability.
 description: Developing workflows and technology to improve content re-use and maintainability.
-url: 'http://undefined.github.io'
-baseurl: /undefined
+url: 'http://iilab.github.io'
+baseurl: /contentascode
 author:
-  name: Your Name
-  url: 'https://twitter.com/yourtwitter'
+  name: Jun Matsushita (iilab.org)
+  url: 'https://twitter.com/iilab'
 defaults:
   - scope:
       path: ''
@@ -31,13 +31,13 @@ redcarpet:
     - lax_spacing
     - smart
 github:
-  repository_url: 'https://github.com/undefined/undefined'
+  repository_url: 'https://github.com/iilab/contentascode'
 gems:
   - jekyll-sitemap
   - jekyll-gist
 safe: false
 lsi: false
-pygments: true
+#pygments: true
 exclude:
   - README.md
   - Rakefile
@@ -47,6 +47,6 @@ exclude:
   - '*.Rmd'
   - vendor
   - .travis.yml
-username: USER
-owner: ORG
-repo: REPO
+username: jmatsushita
+owner: iilab
+repo: contentascode
