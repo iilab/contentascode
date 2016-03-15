@@ -1,7 +1,5 @@
 source: .
 implementation: docsmith
-components:
-  build: travis
 integration:
   travis:
     branch: 'versions/*'
