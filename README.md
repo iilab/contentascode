@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/iilab/contentascode.svg?branch=master)](https://travis-ci.org/iilab/contentascode)
+
 # Content as Code
 
 **Content as Code** is a partnership which develops workflows and technology to improve content re-use and maintainability.
