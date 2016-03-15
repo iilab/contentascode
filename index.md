@@ -30,7 +30,7 @@ Our [**technology approach**](technology) builds on top of lightweight tools tha
 
 ## Who?
 
-Content as code is supported by a partnership. The partnership brings together implementers contributing to projects publishing free/libre and open source content and wanting to have lightweight (post-CMS) approaches to content management that focus on the **author experience** (as well as editor and translator experience).
+Content as code is supported by a partnership. The partnership brings together implementers contributing to projects publishing free/libre and open source content and wanting to have a lightweight (post-CMS or [CMS-Free](https://developmentseed.org/blog/2012/07/27/build-cms-free-websites/)) approach to content management that focus on the **author experience** (as well as editor and translator experience).
 
 Read more about:
 
