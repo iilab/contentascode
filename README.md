@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/iilab/contentascode.svg?branch=master)](https://travis-ci.org/iilab/contentascode)
+[![Travis](https://img.shields.io/travis/iilab/contentascode.svg)](https://travis-ci.org/iilab/contentascode) [![Content as Code](https://img.shields.io/badge/contentascode-deployed-green.svg)](http://iilab.github.io/contentascode)
 
 # Content as Code
 
