@@ -25,8 +25,8 @@ The authoring environment should be:
 ---
 
 |                                                          | Markdown |  Git   | Inplace | Active |
-| -------------------------------------------------------- | -------- | ------ | ------- | ------ |
-| [Prose](http://prose.io)                                | Yes      | github | No      | No     |
+|----------------------------------------------------------|----------|--------|---------|--------|
+| [Prose](http://prose.io)                                 | Yes      | github | No      | No     |
 | [Gitbook](https://www.gitbook.com/editor)                | Yes      | git    | No      | Yes    |
 | [Dillinger](https://github.com/joemccann/dillinger)      | Yes      | github | No      |        |
 | [Aloha](http://www.alohaeditor.org/demo/aloha-ui/)       |          |        | Yes     |        |
@@ -59,14 +59,70 @@ Let's say goodbye to google docs.
 
 ## Analysis
 
-|                 | Offline | Desktop | PDF | Dropbox | G Drive | Distraction free |
-| --------------- | ------- | ------- | --- | ------- | ------- | ---------------- |
-| Prose           |         |         |     |         | No      | Yes              |
-| Gitbook         |         | Yes     | Yes |         | Yes     |                  |
-| Dillinger       | Yes     |         | Yes | Yes     | Yes     | Yes              |
-| Aloha           |         |         |     |         |         |                  |
-| Pen Edit        |         |         |     |         | Yes     |                  |
-| ContentEditable |         |         |     |         | Yes     |                  |
+
+### Project
+
+|                                                          | OSS | Active |                 Comment                  |
+|----------------------------------------------------------|-----|--------|------------------------------------------|
+| [Prose](http://prose.io)                                 | Yes | No     | Huge community of contributors and users |
+| [Gitbook](https://www.gitbook.com/editor)                | Yes | Yes    |                                          |
+| [Dillinger](https://github.com/joemccann/dillinger)      | Yes |        |                                          |
+| [Aloha](http://www.alohaeditor.org/demo/aloha-ui/)       |     |        |                                          |
+| [Pen Editor](http://sofish.github.io/pen/)               | Yes | Yes    |                                          |
+| [ContentEditable](http://html5demos.com/contenteditable) | No  | Yes    |                                          |
+
+
+### Fundamentals
+
+|           | Markdown |  Git   | Branches |     Metadata     | Comment |
+|-----------|----------|--------|----------|------------------|---------|
+| Prose     | Yes      | Github | Yes      | YAML/Frontmatter |         |
+| Gitbook   | Yes      | Yes    |          |                  |         |
+| Dillinger | Yes      | Yes    |          |                  |         |
+| Pen Edit  | Yes      | No     |          |                  |         |
+| Substance | No       | No     |          |                  |         |
+| Realms    | Yes      | No     |          |                  |         |
+| PupPub    |          |        |          |                  |         |
+
+
+### UX
+
+
+|           | InPlace | Preview | Toolbar |   Media    | Links | Metadata | Offline | Focused |
+|-----------|---------|---------|---------|------------|-------|----------|---------|---------|
+| Prose     | No      | Yes     | Yes     | Yes        |       | Yes      | No      | Yes     |
+| Gitbook   | No      | Some    |         | Yes        |       | No       | Yes?    | Some    |
+| Dillinger | No      |         |         | Yes        |       | Yes      | Yes     | Yes     |
+| Pen Edit  | Yes     | Yes     |         | No         |       |          |         |         |
+| Substance | No      | Yes     |         | Yes        |       | Yes      | Yes     | Yes     |
+| Realms    | No      | Yes     |         | No toolbar |       | No       | No      | No      |
+| PupPub    |         |         |         |            |       |          |         |         |
+
+
+### Tech
+
+
+|           | Lang | Frontend |     Backend     | Modular |  Style  |             Comments             |
+|-----------|------|----------|-----------------|---------|---------|----------------------------------|
+| Prose     | JS   | Backbone | Quite Stateless | Good    | Simple. | Bad code climate. Insecure deps. |
+| Gitbook   |      |          |                 |         |         |                                  |
+| Dillinger |      |          |                 |         |         |                                  |
+| Pen Edit  |      |          |                 |         |         |                                  |
+| Substance |      |          |                 |         |         |                                  |
+| Realms    |      |          |                 |         |         |                                  |
+| PupPub    |      |          |                 |         |         |                                  |
+
+### Misc
+
+
+|                 | Offline | Desktop | PDF | Dropbox | G Drive |         Comments         |
+|-----------------|---------|---------|-----|---------|---------|--------------------------|
+| Prose           |         |         |     |         | No      | Also has a table editor. |
+| Gitbook         |         | Yes     | Yes |         | Yes     |                          |
+| Dillinger       | Yes     |         | Yes | Yes     | Yes     |                          |
+| Aloha           |         |         |     |         |         |                          |
+| Pen Edit        |         |         |     |         | Yes     |                          |
+| ContentEditable |         |         |     |         | Yes     |                          |
 
 
 ### Prose
