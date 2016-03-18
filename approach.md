@@ -61,9 +61,9 @@ Applying these concepts and lessons to editorial workflows is not trivial and re
 
 ## FAQ
 
-### What does Post-CMS means?
+### What does Post-CMS mean?
 
-That we've been seduced and then disappointed by CMSes which add too much complexity and therefore create problems of maintainability of content.
+That we've been seduced and then disappointed by [CMSes](https://en.wikipedia.org/wiki/Content_management_system "Content Management Systems") which add too much complexity and therefore create problems of maintainability of content.
 
 ### Why use Markdown and not AsciiDoc/ReStructure/Textile/Wiki syntax?
 
