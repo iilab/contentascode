@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Workflow &middot; Content as Code
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/contentascode/public/css/poole.css">
+  <link rel="stylesheet" href="/contentascode/public/css/syntax.css">
+  <link rel="stylesheet" href="/contentascode/public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <!--
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/contentascode/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/contentascode/public/favicon.ico"> -->
+  <link rel="icon" type="image/svg+xml" href="images/icon.svg">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/contentascode/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/contentascode">
+          Content as Code
+        </a>
+      </h1>
+      <p class="lead">Developing workflows and technology to improve content re-use and maintainability.</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/contentascode/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/contentascode/approach/">Approach</a>
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/contentascode/partners/">Partners</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/contentascode/status/">Status</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/contentascode/technology/">Technology</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+
+      <a class="sidebar-nav-item" href="https://github.com/iilab/contentascode">GitHub project</a>
+
+    </nav>
+
+    <p>&copy; 2016. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container">
+
+    <div>
+      
+      <small>
+        <div style="float:left"><a href="/contentascode/">Home</a>
+        
+          
+            / <a href="/contentascode/technology/">Technology</a>
+          
+        
+          
+            / Workflow
+          
+        
+        </div>
+
+        <div style="float:right"><em><a href="https://github.com/iilab/contentascode/edit/master/technology/workflow.md">Edit this page</a> - <a href="https://github.com/iilab/contentascode/commits/master/technology/workflow.md">View page history</a> - <a href="https://github.com/iilab/contentascode/tree/master/technology/workflow.md">View page source</a></em>
+        </div>
+      </small>
+    </div>
+
+    <div class="page" style="clear:both">
+      <h1 class="page-title">Workflow</h1>
+      <h1 id="content-as-code-implementation-workflows">Content as Code Implementation Workflows</h1>
+
+<p>The contentascode repo should track overall framework discussions. It should use a tagging structure that helps follow the right level of interest or focus of work, for instance:<br />
+- <code class="highlighter-rouge">Meta</code> - Focus on organisational aspects, partnerships,…<br />
+- <code class="highlighter-rouge">Design</code> - Overall contentascode framework discussions such as use cases, users stories<br />
+- <code class="highlighter-rouge">API</code> - Discussion about shared APIs across implementations (<code class="highlighter-rouge">content update</code> or the <code class="highlighter-rouge">_content.yml</code> structures).<br />
+- <code class="highlighter-rouge">Documentation</code> - About the contentascode website as the main source of documentation for the effort, including onboarding, visual explanations, approach to communication.<br />
+- <code class="highlighter-rouge">Features</code> - Discussion and tracking of the progress of specific features across contentascode implementations. For instance <code class="highlighter-rouge">link checking</code> or <code class="highlighter-rouge">project scaffolding</code> or <code class="highlighter-rouge">automatic anchors</code><br />
+- Logical grouping of <code class="highlighter-rouge">Features</code> or <em>Parity</em> with well known tools or stacks. Such as Blogging (or Octopress, Medium), or Wiki (or MediaWiki or Gollum), or CMSes (Drupal,…). <br />
+&gt; Right now I’m trying to use different tags for each “parity goals” but maybe having a <code class="highlighter-rouge">parity</code> tag and have several issues underneath would be better. Each issue linking to the other constituting issues, which raises the effort of linking slightly.</p>
+
+<p>I suspect there’s a smart use of Pull Requests. <br />
+ - Tracking implementations progress. Maybe implementations fork the contentascode repo inside their organisation repo (or maybe a smaller “implementation” repo?) and “check” features or compatible APIs as they progress. This way users that want to follow progress of a particular implementation at a higher level can do so by subscribing to a pull request…</p>
+
+<h2 id="notifications">Notifications</h2>
+
+<p>Piggy backing on the Githb/<a href="http://doc.gitlab.com/ee/workflow/notifications.html">Gitlab notifications</a> seems like the low hanging fruit. These various levels are available:<br />
+ - Watch the whole repo (an argument in favor of small modules/repos)<br />
+ - Watch an issue thread (therefore navigation in issues - through tags, milestone - is key, and should also feed into the static generation)<br />
+ - Watch a pull request (something well suited for external contributions)</p>
+
+<h2 id="public-chat">Public Chat</h2>
+
+<ul>
+  <li>Rocket.Chat dedicated instance</li>
+  <li>IRC Bridge -&gt; IRC public logs.</li>
+  <li></li>
+</ul>
+
+<h2 id="rss">RSS</h2>
+
+<p>It’s interesting to think about how RSS could be used to track changes on the static website at various levels too.</p>
+
+    </div>
+
+    </div>
+
+  </body>
+</html>

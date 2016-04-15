@@ -28,6 +28,9 @@
 <loc>http://iilab.github.io/contentascode/technology/existing/</loc>
 </url>
 <url>
+<loc>http://iilab.github.io/contentascode/technology/foundations/git/</loc>
+</url>
+<url>
 <loc>http://iilab.github.io/contentascode/technology/implementation/</loc>
 </url>
 <url>
@@ -35,6 +38,9 @@
 </url>
 <url>
 <loc>http://iilab.github.io/contentascode/technology/inspiration/</loc>
+</url>
+<url>
+<loc>http://iilab.github.io/contentascode/technology/foundations/markdown/</loc>
 </url>
 <url>
 <loc>http://iilab.github.io/contentascode/partners/</loc>
@@ -47,5 +53,8 @@
 </url>
 <url>
 <loc>http://iilab.github.io/contentascode/technology/translation/</loc>
+</url>
+<url>
+<loc>http://iilab.github.io/contentascode/technology/workflow/</loc>
 </url>
 </urlset>

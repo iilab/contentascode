@@ -90,6 +90,14 @@
       
         
           
+        
+      
+        
+          
+        
+      
+        
+          
             <a class="sidebar-nav-item" href="/contentascode/partners/">Partners</a>
           
         
@@ -103,6 +111,10 @@
         
           
             <a class="sidebar-nav-item" href="/contentascode/technology/">Technology</a>
+          
+        
+      
+        
           
         
       
@@ -283,6 +295,121 @@
 <h2 id="modularity">Modularity</h2>
 
 <p>Scaffold and infrastructure repos might make some choices with regards to lower level implementation approaches (make vs bash vs gulp…) and it would be good to allow this to be plug and play. i.e. Content as Code should be opinionated with regards to concepts and architecture (and maybe its pivot data format, metadata description and other declarative things about workflow configuration), but not with regards to implementation.</p>
+
+<p>This table aims to represent which components affect which stages of the content as code framework.<br />
+ - Key          : means that this component is a key component for this stage.<br />
+ - Change       : means that this component modifies or applies to this stage.<br />
+ - +1 component : means that this component works better with another component.<br />
+ - -1 component : means that this component doesn’t work with another component.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Component \ Stage</th>
+      <th>Source</th>
+      <th>Author</th>
+      <th>Build</th>
+      <th>Integrate</th>
+      <th>Translate</th>
+      <th>Publish</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>github</td>
+      <td>Key</td>
+      <td> </td>
+      <td> </td>
+      <td>+1 travis</td>
+      <td> </td>
+      <td>+1 gh-pages</td>
+    </tr>
+    <tr>
+      <td>gitlab</td>
+      <td>Key</td>
+      <td> </td>
+      <td> </td>
+      <td>+1 gitlab-ci</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>prose</td>
+      <td>+1 github</td>
+      <td>Key</td>
+      <td>+1 jekyll</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>jekyll</td>
+      <td> </td>
+      <td> </td>
+      <td>Key</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>metalsmith</td>
+      <td> </td>
+      <td> </td>
+      <td>Key</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>travis</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Key</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>gitlab-ci</td>
+      <td>-1 github</td>
+      <td> </td>
+      <td> </td>
+      <td>Key</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>linkchecker</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Change</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>transifex</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Key</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>gh-pages</td>
+      <td>+1 github</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Key</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>| Components \ Worfklow | Store | Edit | Share | Check | Translate | Publish |<br />
+|———————–|——-|——|——-|——-|———–|———|</p>
 
 
     </div>

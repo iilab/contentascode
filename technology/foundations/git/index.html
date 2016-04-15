@@ -11,7 +11,7 @@
 
   <title>
     
-      404: Page not found &middot; Content as Code
+      git &middot; Content as Code
     
   </title>
 
@@ -140,19 +140,48 @@
         <div style="float:left"><a href="/contentascode/">Home</a>
         
           
-            / 404
+            / <a href="/contentascode/technology/">Technology</a>
+          
+        
+          
+            / <a href="/contentascode/technology/foundations/">Foundations</a>
+          
+        
+          
+            / Git
           
         
         </div>
 
-        <div style="float:right"><em><a href="https://github.com/iilab/contentascode/edit/master/404.html">Edit this page</a> - <a href="https://github.com/iilab/contentascode/commits/master/404.html">View page history</a> - <a href="https://github.com/iilab/contentascode/tree/master/404.html">View page source</a></em>
+        <div style="float:right"><em><a href="https://github.com/iilab/contentascode/edit/master/technology/foundations/git.md">Edit this page</a> - <a href="https://github.com/iilab/contentascode/commits/master/technology/foundations/git.md">View page history</a> - <a href="https://github.com/iilab/contentascode/tree/master/technology/foundations/git.md">View page source</a></em>
         </div>
       </small>
     </div>
 
     <div class="page" style="clear:both">
-      <h1 class="page-title">404: Page not found</h1>
-      <p class="lead">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist. <a href="/contentascode">Head back home</a> to try finding it again.</p>
+      <h1 class="page-title">git</h1>
+      <h1 id="git">Git</h1>
+
+<p>One of the most fundamental components of the content as code approach is the use of the distributed version control system git. It provides low level facilities for tracking changes and backing up ~~code~~ content in large file structures, create new versions (branches) as well as ways to deal with conflicts and merging different versions.</p>
+
+<p>But one of the emerging practices that both Github and Gitlab have been focusing on have added a number of buildinb blocks to the low-level mechanics of git. Some of these are:<br />
+ - forks and tracking the “fork graph”,<br />
+ - pull requests as a first class concept,<br />
+ - continuous integration reporting back at various levels (release, branches, pull requests) <br />
+ - issue tracking deeply integrated with commits,<br />
+ - code review tools,<br />
+ - collaboration with @mentions and #issue references across repos.</p>
+
+<p>It is really these emerging tools that offer the most promise in applying “code management” concepts to “content management”.</p>
+
+<p>One of the strategies of content as code is, in addition to having a author-centric approach to prioritising features and improving user experience, to follow a somewhat bottom-up, tech-centric approach simultaneously which aims to iterate on the above building blocks to see how well they can be assembled to provide new useful functionalities for content management.</p>
+
+<p>Some of these ideas are currently being explored in the following issues on the content as code repo:<br />
+ - <a href="https://github.com/iilab/contentascode/issues/11">Use of continuous integration to provide content verification and testing (#11)</a><br />
+ - <a href="https://github.com/iilab/contentascode/issues/11#issuecomment-196234329">Reporting of these tests, such as link checking, in pull requests (#11)</a><br />
+ - <a href="https://github.com/iilab/contentascode/issues/24">Implement github issues as a page discussion feature (#24)</a><br />
+ - <a href="https://github.com/iilab/contentascode/issues/35">Integration with waffle.io (#35)</a><br />
+ - <a href="https://github.com/iilab/contentascode/issues/36">Integration with kanban.leanlabs.io (#36)</a></p>
 
     </div>
 
