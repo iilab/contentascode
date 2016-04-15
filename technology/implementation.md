@@ -48,3 +48,26 @@ We also need to think about migration and various options to use [integrations](
 
 Scaffold and infrastructure repos might make some choices with regards to lower level implementation approaches (make vs bash vs gulp...) and it would be good to allow this to be plug and play. i.e. Content as Code should be opinionated with regards to concepts and architecture (and maybe its pivot data format, metadata description and other declarative things about workflow configuration), but not with regards to implementation.
 
+This table aims to represent which components affect which stages of the content as code framework.
+ - Key          : means that this component is a key component for this stage.
+ - Change       : means that this component modifies or applies to this stage.
+ - +1 component : means that this component works better with another component.
+ - -1 component : means that this component doesn't work with another component.
+
+| Component \ Stage |   Source  | Author |   Build   |  Integrate   | Translate |   Publish   |
+|-------------------|-----------|--------|-----------|--------------|-----------|-------------|
+| github            | Key       |        |           | +1 travis    |           | +1 gh-pages |
+| gitlab            | Key       |        |           | +1 gitlab-ci |           |             |
+| prose             | +1 github | Key    | +1 jekyll |              |           |             |
+| jekyll            |           |        | Key       |              |           |             |
+| metalsmith        |           |        | Key       |              |           |             |
+| travis            |           |        |           | Key          |           |             |
+| gitlab-ci         | -1 github |        |           | Key          |           |             |
+| linkchecker       |           |        |           | Change       |           |             |
+| transifex         |           |        |           |              | Key       |             |
+| gh-pages          | +1 github |        |           |              |           | Key         |
+
+| Components \ Worfklow | Store | Edit | Share | Check | Translate | Publish |
+|-----------------------|-------|------|-------|-------|-----------|---------|
+
+
