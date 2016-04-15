@@ -10,7 +10,8 @@ The contentascode repo should track overall framework discussions. It should use
 - `API` - Discussion about shared APIs across implementations (`content update` or the `_content.yml` structures).
 - `Documentation` - About the contentascode website as the main source of documentation for the effort, including onboarding, visual explanations, approach to communication.
 - `Features` - Discussion and tracking of the progress of specific features across contentascode implementations. For instance `link checking` or `project scaffolding` or `automatic anchors`
-- Logical grouping of `Features` or *Parity* with well known tools or stacks. Such as Blogging (or Octopress, Medium), or Wiki (or MediaWiki or Gollum), or CMSes (Drupal,...).
+- Logical grouping of `Features` or *Parity* with well known tools or stacks. Such as Blogging (or Octopress, Medium), or Wiki (or MediaWiki or Gollum), or CMSes (Drupal,...). 
+> Right now I'm trying to use different tags for each "parity goals" but maybe having a `parity` tag and have several issues underneath would be better. Each issue linking to the other constituting issues, which raises the effort of linking slightly. 
 
 I suspect there's a smart use of Pull Requests. 
  - Tracking implementations progress. Maybe implementations fork the contentascode repo inside their organisation repo (or maybe a smaller "implementation" repo?) and "check" features or compatible APIs as they progress. This way users that want to follow progress of a particular implementation at a higher level can do so by subscribing to a pull request...
