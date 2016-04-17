@@ -1,5 +1,6 @@
 ---
 title: git
+stage: source
 ---
 
 # Git
