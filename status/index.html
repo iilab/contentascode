@@ -166,7 +166,18 @@
   <p><a href="https://github.com/iilab/contentascode/issues/7">Help develop the proof of concept #7</a></p>
 </blockquote>
 
+<h2 id="strategies">Strategies</h2>
+
+<p>The below roadmap is only loosely enforced and what drives progress on Content as Code is engagement from projects which are implementing such approaches and will help:<br />
+ - Develop building blocks with other development stacks<br />
+ - Extend features of existing building blocks (such as docsmith)<br />
+ - Participate in the user experience and technology design</p>
+
 <h2 id="implementations">Implementations</h2>
+
+<ul>
+  <li>Summary</li>
+</ul>
 
 <table>
   <thead>
@@ -174,8 +185,166 @@
       <th>Name</th>
       <th>Description</th>
       <th>Repo URL</th>
-      <th>Text Format</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Content as Code</td>
+      <td>Reference Implementation</td>
+      <td>iilab/contentascode</td>
+    </tr>
+    <tr>
+      <td>Open Integrity</td>
+      <td>Data Framework</td>
+      <td>https://code.iilab.org/openintegrity/openintegrity.org</td>
+    </tr>
+    <tr>
+      <td>Open Mentoring</td>
+      <td>Mobile Education</td>
+      <td>iilab/openmentoring</td>
+    </tr>
+    <tr>
+      <td>Panic Button</td>
+      <td>Simple CMS for Mobile App</td>
+      <td>PanicInitiative/PanicButton</td>
+    </tr>
+    <tr>
+      <td>Using TBB</td>
+      <td>Semantic Documentation experiment</td>
+      <td>elationfoundation/using-tor-browser-bundle</td>
+    </tr>
+    <tr>
+      <td>Security in a Box</td>
+      <td>Work in Progress</td>
+      <td>coming soon</td>
+    </tr>
+    <tr>
+      <td>Level Up</td>
+      <td>Work in Progress</td>
+      <td>coming soon</td>
+    </tr>
+    <tr>
+      <td>TOTEM</td>
+      <td>Work in Progress</td>
+      <td>coming soon</td>
+    </tr>
+    <tr>
+      <td>Advocacy Assembly</td>
+      <td>Work in Progress</td>
+      <td>coming soon</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>Components / Stages</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Source</th>
+      <th>Author</th>
       <th>Generator</th>
+      <th>Build</th>
+      <th>Integration</th>
+      <th>Publishing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Content as Code</td>
+      <td>Github</td>
+      <td>Markdown/Pandoc</td>
+      <td>Metalsmith</td>
+      <td>npm</td>
+      <td>Travis</td>
+      <td>Gh-pages</td>
+    </tr>
+    <tr>
+      <td>Open Integrity</td>
+      <td>Gitlab</td>
+      <td>Prose/Markdown/Pandoc</td>
+      <td>Metalsmith</td>
+      <td>Sighjs</td>
+      <td>Gitlab CI</td>
+      <td>Self-hosted</td>
+    </tr>
+    <tr>
+      <td>Open Mentoring</td>
+      <td>Github</td>
+      <td>Markdown/Marked</td>
+      <td>Metalsmith</td>
+      <td>make</td>
+      <td>Travis</td>
+      <td>Gh-pages</td>
+    </tr>
+    <tr>
+      <td>Panic Button</td>
+      <td>Github</td>
+      <td>Prose/Markdown</td>
+      <td>Jekyll</td>
+      <td>gh-pages</td>
+      <td> </td>
+      <td>Self-hosted</td>
+    </tr>
+    <tr>
+      <td>Using TBB</td>
+      <td>Github</td>
+      <td>Markdown</td>
+      <td>Jekyll</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Security in a Box</td>
+      <td>Gitlab</td>
+      <td>Markdown</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Level Up</td>
+      <td>Github</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TOTEM</td>
+      <td>Gitlab</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Advocacy Assembly</td>
+      <td>Github</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>Publishing Channels</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
       <th>Web</th>
       <th>Mobile</th>
       <th>Book</th>
@@ -185,21 +354,20 @@
   <tbody>
     <tr>
       <td>Content as Code</td>
-      <td>Reference Implementation</td>
-      <td>iilab/contentascode</td>
-      <td>Markdown</td>
-      <td>Jekyll</td>
       <td>Yes</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
     </tr>
     <tr>
+      <td>Open Integrity</td>
+      <td>Yes</td>
+      <td> </td>
+      <td> </td>
+      <td>Yes</td>
+    </tr>
+    <tr>
       <td>Open Mentoring</td>
-      <td>Mobile Education</td>
-      <td>iilab/openmentoring</td>
-      <td>Markdown</td>
-      <td>Metalsmith</td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Soon</td>
@@ -207,10 +375,6 @@
     </tr>
     <tr>
       <td>Panic Button</td>
-      <td>Simple CMS for Mobile App</td>
-      <td>PanicInitiative/PanicButton</td>
-      <td>Markdown</td>
-      <td>Jekyll</td>
       <td>Yes</td>
       <td>Yes</td>
       <td>No</td>
@@ -218,10 +382,6 @@
     </tr>
     <tr>
       <td>Using TBB</td>
-      <td>Semantic Documentation experiment</td>
-      <td>elationfoundation/using-tor-browser-bundle</td>
-      <td>Markdown</td>
-      <td>Jekyll</td>
       <td>Yes</td>
       <td> </td>
       <td> </td>
@@ -229,10 +389,6 @@
     </tr>
     <tr>
       <td>Security in a Box</td>
-      <td>Work in Progress</td>
-      <td>coming soon</td>
-      <td> </td>
-      <td> </td>
       <td> </td>
       <td> </td>
       <td> </td>
@@ -240,10 +396,6 @@
     </tr>
     <tr>
       <td>Level Up</td>
-      <td>Work in Progress</td>
-      <td>coming soon</td>
-      <td> </td>
-      <td> </td>
       <td> </td>
       <td> </td>
       <td> </td>
@@ -251,10 +403,6 @@
     </tr>
     <tr>
       <td>TOTEM</td>
-      <td>Work in Progress</td>
-      <td>coming soon</td>
-      <td> </td>
-      <td> </td>
       <td> </td>
       <td> </td>
       <td> </td>
@@ -262,10 +410,6 @@
     </tr>
     <tr>
       <td>Advocacy Assembly</td>
-      <td>Work in Progress</td>
-      <td>coming soon</td>
-      <td> </td>
-      <td> </td>
       <td> </td>
       <td> </td>
       <td> </td>
@@ -278,6 +422,7 @@
 
 <ul id="markdown-toc">
   <li><a href="#current" id="markdown-toc-current">Current</a></li>
+  <li><a href="#strategies" id="markdown-toc-strategies">Strategies</a></li>
   <li><a href="#implementations" id="markdown-toc-implementations">Implementations</a></li>
   <li><a href="#roadmap" id="markdown-toc-roadmap">Roadmap</a>    <ul>
       <li><a href="#proof-of-concept---v001" id="markdown-toc-proof-of-concept---v001">Proof of Concept - v0.0.1</a></li>
@@ -295,46 +440,46 @@
 <h4 id="design">Design</h4>
 
 <ul>
-  <li><a href="https://github.com/iilab/contentascode/issues/1">Iterate on the ecosystem design document #1</a></li>
-  <li><a href="https://github.com/iilab/contentascode/issues/2">Document translation workflow #2</a></li>
-  <li><a href="https://github.com/iilab/contentascode/issues/3">Implement translation workflow scripts #3</a></li>
-  <li><a href="https://github.com/iilab/contentascode/issues/4">Document possible legacy technology constraints and requirements #4</a></li>
-  <li><a href="https://github.com/iilab/contentascode/issues/5">Choose editor(s) as a basis for the authoring environment #5</a></li>
-  <li><a href="https://github.com/iilab/contentascode/issues/6">Discuss Roadmap #6</a></li>
+  <li>~~<a href="https://github.com/iilab/contentascode/issues/1">Iterate on the ecosystem design document #1</a>~~</li>
+  <li>~~<a href="https://github.com/iilab/contentascode/issues/2">Document translation workflow #2</a>~~</li>
+  <li><a href="https://github.com/iilab/contentascode/issues/3">Implement translation workflow scripts #3</a>~~</li>
+  <li>~~<a href="https://github.com/iilab/contentascode/issues/4">Document possible legacy technology constraints and requirements #4</a>~~</li>
+  <li>~~<a href="https://github.com/iilab/contentascode/issues/5">Choose editor(s) as a basis for the authoring environment #5</a>~~</li>
+  <li>~~<a href="https://github.com/iilab/contentascode/issues/6">Discuss Roadmap #6</a>~~</li>
 </ul>
 
 <h4 id="implementation">Implementation</h4>
 
 <ul>
-  <li><a href="https://github.com/iilab/contentascode/issues/7">Implement Proof of Concept #7</a></li>
+  <li>~~<a href="https://github.com/iilab/contentascode/issues/7">Implement Proof of Concept #7</a>~~</li>
 </ul>
 
 <blockquote>
-  <p>Milestone <a href="https://github.com/iilab/contentascode/milestones/Lift%20off">Lift off</a><br />
-Version <a href="https://github.com/iilab/contentascode/issues/7">v0.0.1</a> - https://github.com/iilab/contentascode/issues/7</p>
+  <p>~~Milestone <a href="https://github.com/iilab/contentascode/milestones/Lift%20off">Lift off</a>~~<br />
+~~Version <a href="https://github.com/iilab/contentascode/issues/7">v0.0.1</a>~~ - https://github.com/iilab/contentascode/issues/7</p>
 </blockquote>
 
 <ul>
   <li>Authoring
     <ul>
-      <li>[ ] Github</li>
-      <li>[ ] Jekyll</li>
-      <li>[ ] Prose</li>
+      <li>[x] Github</li>
+      <li>[x] Jekyll</li>
+      <li>[x] Prose</li>
     </ul>
   </li>
   <li>Translation
     <ul>
-      <li>[ ] Transifex</li>
+      <li>[x] Transifex</li>
     </ul>
   </li>
   <li>Collaboration
     <ul>
-      <li>[ ] Github - Fork and pull request</li>
+      <li>[x] Github - Fork and pull request</li>
     </ul>
   </li>
   <li>Management
     <ul>
-      <li>[ ] Waffle</li>
+      <li>[x] Waffle</li>
     </ul>
   </li>
   <li>CMS Parity
