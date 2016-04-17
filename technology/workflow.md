@@ -13,8 +13,12 @@ The contentascode repo should track overall framework discussions. It should use
 - Logical grouping of `Features` or *Parity* with well known tools or stacks. Such as Blogging (or Octopress, Medium), or Wiki (or MediaWiki or Gollum), or CMSes (Drupal,...). 
 > Right now I'm trying to use different tags for each "parity goals" but maybe having a `parity` tag and have several issues underneath would be better. Each issue linking to the other constituting issues, which raises the effort of linking slightly. 
 
+## Progress
+
 I suspect there's a smart use of Pull Requests. 
  - Tracking implementations progress. Maybe implementations fork the contentascode repo inside their organisation repo (or maybe a smaller "implementation" repo?) and "check" features or compatible APIs as they progress. This way users that want to follow progress of a particular implementation at a higher level can do so by subscribing to a pull request...
+
+With the waffle approach, we might be able, and have an incentive to for display purposes on the board, to have another mechanism to group issues which is more task driven. This needs more thinking.
 
 ## Notifications
 
