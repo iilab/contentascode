@@ -11,18 +11,56 @@ title: Status
 
 > [Help develop the proof of concept #7](https://github.com/iilab/contentascode/issues/7)
 
+## Strategies
+
+The below roadmap is only loosely enforced and what drives progress on Content as Code is engagement from projects which are implementing such approaches and will help:
+ - Develop building blocks with other development stacks
+ - Extend features of existing building blocks (such as docsmith)
+ - Participate in the user experience and technology design
+
 ## Implementations
 
-|        Name       |             Description            |                  Repo URL                  | Text Format | Generator  | Web | Mobile | Book | Interactive |
-| ----------------- | --------------------------------- | ------------------------------------------ | ----------- | ---------- | --- | ------ | ---- | ----------- |
-| Content as Code   | Reference Implementation          | iilab/contentascode                        | Markdown    | Jekyll     | Yes | No     | No   | No          |
-| Open Mentoring    | Mobile Education                  | iilab/openmentoring                        | Markdown    | Metalsmith | Yes | Yes    | Soon | Some        |
-| Panic Button      | Simple CMS for Mobile App         | PanicInitiative/PanicButton                | Markdown    | Jekyll     | Yes | Yes    | No   | Some        |
-| Using TBB         | Semantic Documentation experiment | elationfoundation/using-tor-browser-bundle | Markdown    | Jekyll     | Yes |        |      |             |
-| Security in a Box | Work in Progress                  | coming soon                                |             |            |     |        |      |             |
-| Level Up          | Work in Progress                  | coming soon                                |             |            |     |        |      |             |
-| TOTEM             | Work in Progress                  | coming soon                                |             |            |     |        |      |             |
-| Advocacy Assembly | Work in Progress                  | coming soon                                |             |            |     |        |      |             |
+ - Summary
+
+|        Name       |            Description            |                        Repo URL                        |
+|-------------------|-----------------------------------|--------------------------------------------------------|
+| Content as Code   | Reference Implementation          | iilab/contentascode                                    |
+| Open Integrity    | Data Framework                    | https://code.iilab.org/openintegrity/openintegrity.org |
+| Open Mentoring    | Mobile Education                  | iilab/openmentoring                                    |
+| Panic Button      | Simple CMS for Mobile App         | PanicInitiative/PanicButton                            |
+| Using TBB         | Semantic Documentation experiment | elationfoundation/using-tor-browser-bundle             |
+| Security in a Box | Work in Progress                  | coming soon                                            |
+| Level Up          | Work in Progress                  | coming soon                                            |
+| TOTEM             | Work in Progress                  | coming soon                                            |
+| Advocacy Assembly | Work in Progress                  | coming soon                                            |
+
+ - Components / Stages
+
+|        Name       | Source |         Author        | Generator  |  Build   | Integration |  Publishing |
+|-------------------|--------|-----------------------|------------|----------|-------------|-------------|
+| Content as Code   | Github | Markdown/Pandoc       | Metalsmith | npm      | Travis      | Gh-pages    |
+| Open Integrity    | Gitlab | Prose/Markdown/Pandoc | Metalsmith | Sighjs   | Gitlab CI   | Self-hosted |
+| Open Mentoring    | Github | Markdown/Marked       | Metalsmith | make     | Travis      | Gh-pages    |
+| Panic Button      | Github | Prose/Markdown        | Jekyll     | gh-pages |             | Self-hosted |
+| Using TBB         | Github | Markdown              | Jekyll     |          |             |             |
+| Security in a Box | Gitlab | Markdown              |            |          |             |             |
+| Level Up          | Github |                       |            |          |             |             |
+| TOTEM             | Gitlab |                       |            |          |             |             |
+| Advocacy Assembly | Github |                       |            |          |             |             |
+
+ - Publishing Channels
+
+|        Name       | Web | Mobile | Book | Interactive |
+|-------------------|-----|--------|------|-------------|
+| Content as Code   | Yes | No     | No   | No          |
+| Open Integrity    | Yes |        |      | Yes         |
+| Open Mentoring    | Yes | Yes    | Soon | Some        |
+| Panic Button      | Yes | Yes    | No   | Some        |
+| Using TBB         | Yes |        |      |             |
+| Security in a Box |     |        |      |             |
+| Level Up          |     |        |      |             |
+| TOTEM             |     |        |      |             |
+| Advocacy Assembly |     |        |      |             |
 
 ## Roadmap
 
@@ -35,39 +73,40 @@ In the run up to the IFF the proposed tasks to help get the partnership off the 
 
 #### Design
 
-- [Iterate on the ecosystem design document #1](https://github.com/iilab/contentascode/issues/1)
-- [Document translation workflow #2](https://github.com/iilab/contentascode/issues/2)
-- [Implement translation workflow scripts #3](https://github.com/iilab/contentascode/issues/3)
-- [Document possible legacy technology constraints and requirements #4](https://github.com/iilab/contentascode/issues/4)
-- [Choose editor(s) as a basis for the authoring environment #5](https://github.com/iilab/contentascode/issues/5)
-- [Discuss Roadmap #6](https://github.com/iilab/contentascode/issues/6)
-
+- ~~[Iterate on the ecosystem design document #1](https://github.com/iilab/contentascode/issues/1)~~
+- ~~[Document translation workflow #2](https://github.com/iilab/contentascode/issues/2)~~
+- [Implement translation workflow scripts #3](https://github.com/iilab/contentascode/issues/3)~~
+- ~~[Document possible legacy technology constraints and requirements #4](https://github.com/iilab/contentascode/issues/4)~~
+- ~~[Choose editor(s) as a basis for the authoring environment #5](https://github.com/iilab/contentascode/issues/5)~~
+- ~~[Discuss Roadmap #6](https://github.com/iilab/contentascode/issues/6)~~
 
 #### Implementation
 
-- [Implement Proof of Concept #7](https://github.com/iilab/contentascode/issues/7)
+- ~~[Implement Proof of Concept #7](https://github.com/iilab/contentascode/issues/7)~~
 
-> Milestone [Lift off](https://github.com/iilab/contentascode/milestones/Lift%20off)
-> Version [v0.0.1](https://github.com/iilab/contentascode/issues/7) - https://github.com/iilab/contentascode/issues/7
+> ~~Milestone [Lift off](https://github.com/iilab/contentascode/milestones/Lift%20off)~~
+> ~~Version [v0.0.1](https://github.com/iilab/contentascode/issues/7)~~ - https://github.com/iilab/contentascode/issues/7
 
  -  Authoring
-     + [ ] Github
-     + [ ] Jekyll
-     + [ ] Prose
+     + [x] Github
+     + [x] Jekyll
+     + [x] Prose
  - Translation
-     + [ ] Transifex
+     + [x] Transifex
 
  - Collaboration
-     + [ ] Github - Fork and pull request
+     + [x] Github - Fork and pull request
 
  - Management
-     + [ ] Waffle 
+     + [x] Waffle 
+
  - CMS Parity
      + [ ] Comments - Github issues?
      + [ ] Stats - Piwik
 
  - Deployment
      + [ ] Single repo and one click deploy 
+
 
 ### Prototype - v0.1.0
 
