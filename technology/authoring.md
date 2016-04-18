@@ -1,5 +1,6 @@
 ---
 title: Authoring
+issue: 5
 ---
 
 >  [Contribute your ideas and follow the discussion about the choice of authoring environment](https://github.com/iilab/contentascode/issues/5)
