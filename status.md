@@ -11,6 +11,25 @@ title: Status
 
 > [Help develop the proof of concept #7](https://github.com/iilab/contentascode/issues/7)
 
+<!-- MarkdownTOC -->
+
+- [Strategies](#strategies)
+- [Implementations](#implementations)
+- [Roadmap](#roadmap)
+    - [Blog](#blog)
+    - [Wiki](#wiki)
+    - [Knowledge Base](#knowledge-base)
+    - [Project Management](#project-management)
+    - [CMS](#cms)
+- [Milestones](#milestones)
+    - [Proof of Concept - v0.0.1](#proof-of-concept---v001)
+    - [Prototype - v0.1.0](#prototype---v010)
+    - [Minimum Viable Implementation - v1.0.0](#minimum-viable-implementation---v100)
+- [Follow](#follow)
+
+<!-- /MarkdownTOC -->
+
+
 ## Strategies
 
 The below roadmap is only loosely enforced and what drives progress on Content as Code is engagement from projects which are implementing such approaches and will help:
@@ -66,6 +85,57 @@ The below roadmap is only loosely enforced and what drives progress on Content a
 
 * TOC
 {:toc}
+
+
+### Blog
+> In progress
+
+ - [x] Initialise an empty project (`docsmith init metalsmith` (default) or `docsmith init jekyll`)
+ - [ ] Assist in creating posts (a la Octopress or Docpad)
+ - [ ] Authoring environment (a la Prose or Gitbook) [#5](https://github.com/iilab/contentascode/issues/5)
+ - [ ] Validate/Check
+ - [ ] Preview
+ - [ ] Publish
+
+### Wiki
+> In progress
+
+Some features of a wiki such as the 
+ - [x] Submit page edits
+ - [ ] Submit anonymous page edits
+ - [x] View page history
+ - [ ] Create new pages
+ - [ ] Semantic features (a la Wagn or Semantic MediaWiki)
+ - [ ] Federation (a la Smallest Federated Wiki)
+
+### Knowledge Base
+> Collective Intelligence. See [Open Integrity Framework](https://code.iilab.org/openintegrity/framework)
+
+ - [ ] User Feedback mechanisms
+     - [ ] Line/Section content review [#37](https://github.com/iilab/contentascode/issues/37) [#38](https://github.com/iilab/contentascode/issues/38)
+     - 
+
+### Project Management
+> In progress
+
+ - [x] Create tasks (via Github/Gitlab issue)
+ - [ ] Follow tasks
+     - [x] Via github/gitlab mentions *(for free)*
+     - [ ] Via client side widget
+     - [ ] With a smart notification [#46](https://github.com/iilab/contentascode/issues/46)
+ - [ ] Update linked task status [#45](https://github.com/iilab/contentascode/issues/45)
+ - [ ] Link tasks to pages [#24](https://github.com/iilab/contentascode/issues/37) [#38](https://github.com/iilab/contentascode/issues/24)
+ - [x] See tasks in Kanban view [Leanlabs Kanban #35](https://github.com/iilab/contentascode/issues/35) [Waffle #36](https://github.com/iilab/contentascode/issues/36)
+
+### CMS
+
+ - [ ] Content review workflows
+    - [ ] External review workflows [#20](https://github.com/iilab/contentascode/issues/20)
+ - [ ] Translation [#4](https://github.com/iilab/contentascode/issues/4)
+ - [ ] ...
+
+
+## Milestones
 
 ### Proof of Concept - v0.0.1
 
