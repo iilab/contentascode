@@ -67,7 +67,7 @@ This table aims to represent which components affect which stages of the content
 | transifex         |           |        |           |              | Key       |             |
 | gh-pages          | +1 github |        |           |              |           | Key         |
 
-| Components \ Worfklow | Store | Edit | Share | Check | Translate | Publish |
-|-----------------------|-------|------|-------|-------|-----------|---------|
+| Components \ Stages | Store | Edit | Share | Check | Translate | Publish |
+|---------------------|-------|------|-------|-------|-----------|---------|
 
 
