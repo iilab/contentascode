@@ -98,7 +98,19 @@
       
         
           
+        
+      
+        
+          
+        
+      
+        
+          
             <a class="sidebar-nav-item" href="/contentascode/partners/">Partners</a>
+          
+        
+      
+        
           
         
       
@@ -176,10 +188,29 @@
 
 <h2 id="notifications">Notifications</h2>
 
-<p>Piggy backing on the Githb/<a href="http://doc.gitlab.com/ee/workflow/notifications.html">Gitlab notifications</a> seems like the low hanging fruit. These various levels are available:<br />
- - Watch the whole repo (an argument in favor of small modules/repos)<br />
- - Watch an issue thread (therefore navigation in issues - through tags, milestone - is key, and should also feed into the static generation)<br />
- - Watch a pull request (something well suited for external contributions)</p>
+<p>Piggy backing on the Githb/<a href="http://doc.gitlab.com/ee/workflow/notifications.html">Gitlab notifications</a> seems like the low hanging fruit. These various levels are available:</p>
+
+<p><em>Participating</em> notifications are those in which you are directly involved in a conversation. You will automatically receive these notifications when:</p>
+
+<ul>
+  <li>Someone mentions you or a team you’re a member of</li>
+  <li>You are assigned to an issue or pull request</li>
+  <li>Someone makes a comment in a conversation you’re subscribed to</li>
+</ul>
+
+<p><em>Watching</em> notifications are those in which you are actively watching a repository, but aren’t necessarily participating. You will automatically receive these notifications for:</p>
+
+<ul>
+  <li>Opened issues and their comments</li>
+  <li>Opened pull requests and their comments</li>
+  <li>Comments on any commits</li>
+  <li>Published releases</li>
+</ul>
+
+<p>Thoughts:<br />
+ - Watching the whole repo is an argument in favor of small modules/repos, but if so it might make subscription to a master repo harder.<br />
+ - Watching an issue thread, therefore navigation in issues - through tags, milestone - is key, and should also feed into the static generation<br />
+ - Watch a pull request, something well suited for external contributions.</p>
 
 <h2 id="public-chat">Public Chat</h2>
 
@@ -192,6 +223,65 @@
 <h2 id="rss">RSS</h2>
 
 <p>It’s interesting to think about how RSS could be used to track changes on the static website at various levels too.</p>
+
+<h2 id="notes">Notes</h2>
+
+<p>Semantics<br />
+ - Watch/Subscribe<br />
+    - Item<br />
+    - Group<br />
+ - Participate/Mentions<br />
+ - Configure Delivery<br />
+   - Channels<br />
+     - Email<br />
+     - RSS<br />
+     - IRC/Chat<br />
+     - Third party platform (Github/Gitlab/…)<br />
+   - Frequency<br />
+     - Immediately<br />
+     - Batch</p>
+
+<p>The first step is to depend on an external service for notifications (despite the need to register/login). Good candidates are the Github/Gitlab issue trackers (Gitlab self-hosted allowing to avoid third party authentication dependencies).</p>
+
+<p>In that case there should be mappings of content items to issues (#24) and notifications can be managed through the issue subscription mechanism. Here are possible approaches:</p>
+
+<h4 id="approach-a">Approach A</h4>
+<blockquote>
+  <p>Example for one master repo</p>
+</blockquote>
+
+<p>Repo: https://github.com/iilab/contentascode<br />
+Issues: https://github.com/iilab/contentascode/issues</p>
+
+<p>One issue could be mapped to one page.<br />
+ - PROS: The issue can be used as a discussion page. <br />
+ - CONS: Lots of issues.</p>
+
+<p>Implementation:<br />
+ - At first an <code class="highlighter-rouge">issue</code> metadata key could be added with the issue number.<br />
+ - Later an issue could be created automatically via the issue tracker’s API.<br />
+ - Commits could be checked and amended with the proper issue number so that they appear in the issue thread.</p>
+
+<h4 id="approach-b">Approach B</h4>
+<blockquote>
+  <p>One master repo, issues are orthogonal to the content (a more classical setup between code and issue tracking or documentation and issues)</p>
+</blockquote>
+
+<p>Repo: https://github.com/iilab/openmentoring-mobile<br />
+Issues: https://github.com/iilab/openmentoring-mobile/issues</p>
+
+<h4 id="approach-c">Approach C</h4>
+<blockquote>
+  <p>Multiple subrepos, corresponding to “areas of interest”</p>
+</blockquote>
+
+<p>Repo: https://code.iilab.org/openintegrity/openintegrity.org<br />
+Subrepos:<br />
+ - https://code.iilab.org/openintegrity/framework<br />
+ - https://code.iilab.org/openintegrity/design<br />
+ - https://code.iilab.org/openintegrity/practices<br />
+ - https://code.iilab.org/openintegrity/impact</p>
+
 
     </div>
 

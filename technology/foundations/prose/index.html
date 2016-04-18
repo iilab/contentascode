@@ -11,7 +11,7 @@
 
   <title>
     
-      git &middot; Content as Code
+      Prose &middot; Content as Code
     
   </title>
 
@@ -160,40 +160,35 @@
           
         
           
-            / Git
+            / Prose
           
         
         </div>
 
-        <div style="float:right"><em><a href="https://github.com/iilab/contentascode/edit/master/technology/foundations/git.md">Edit this page</a> - <a href="https://github.com/iilab/contentascode/commits/master/technology/foundations/git.md">View page history</a> - <a href="https://github.com/iilab/contentascode/tree/master/technology/foundations/git.md">View page source</a></em>
+        <div style="float:right"><em><a href="https://github.com/iilab/contentascode/edit/master/technology/foundations/prose.md">Edit this page</a> - <a href="https://github.com/iilab/contentascode/commits/master/technology/foundations/prose.md">View page history</a> - <a href="https://github.com/iilab/contentascode/tree/master/technology/foundations/prose.md">View page source</a></em>
         </div>
       </small>
     </div>
 
     <div class="page" style="clear:both">
-      <h1 class="page-title">git</h1>
-      <h1 id="git">Git</h1>
+      <h1 class="page-title">Prose</h1>
+      <ul>
+  <li>Integrate with Gitlab backend</li>
+  <li>Easier “Fork and Pull Request” workflow for non techies.</li>
+  <li>Allow offline workflow</li>
+  <li>Metadata first document creation</li>
+  <li>Transclusion support (iilab/prose#1)</li>
+  <li>Prosemirror integration</li>
+  <li>Content “Integration” tests #11 (perhaps with isomorphic tests ran by prosemirror in the client)</li>
+</ul>
 
-<p>One of the most fundamental components of the content as code approach is the use of the distributed version control system git. It provides low level facilities for tracking changes and backing up ~~code~~ content in large file structures, create new versions (branches) as well as ways to deal with conflicts and merging different versions.</p>
+<p>:<a href="https://github.com/iilab/contentascode/issues/5#issuecomment-197972547">Choose editor(s) as a basis for the authoring environment #5 - Comment</a></p>
 
-<p>But one of the emerging practices that both Github and Gitlab have been focusing on have added a number of buildinb blocks to the low-level mechanics of git. Some of these are:<br />
- - forks and tracking the “fork graph”,<br />
- - pull requests as a first class concept,<br />
- - continuous integration reporting back at various levels (release, branches, pull requests) <br />
- - issue tracking deeply integrated with commits,<br />
- - code review tools,<br />
- - collaboration with @mentions and #issue references across repos.</p>
+<p>This <a href="https://github.com/ProseMirror/prosemirror/issues/9">issue on ProseMirror</a> makes a good point about separation of concern between the editor and the backend. Substance might mean a slightly stronger coupling between document authoring, document metadata and project navigation and backend.</p>
 
-<p>It is really these emerging tools that offer the most promise in applying “code management” concepts to “content management”.</p>
+<p>In that sense Prose could be a project navigation component with ProseMirror as the authoring component (there would probably need to be some integration between the two to help for instance with navigation within a project’s media or link library).  Prose would manage document metadata (in the YAML frontmatter or elsewhere) and connect to various backends (including local ones for offline editing).</p>
 
-<p>One of the strategies of content as code is, in addition to having a author-centric approach to prioritising features and improving user experience, to follow a somewhat bottom-up, tech-centric approach simultaneously which aims to iterate on the above building blocks to see how well they can be assembled to provide new useful functionalities for content management.</p>
-
-<p>Some of these ideas are currently being explored in the following issues on the content as code repo:<br />
- - <a href="https://github.com/iilab/contentascode/issues/11">Use of continuous integration to provide content verification and testing (#11)</a><br />
- - <a href="https://github.com/iilab/contentascode/issues/11#issuecomment-196234329">Reporting of these tests, such as link checking, in pull requests (#11)</a><br />
- - <a href="https://github.com/iilab/contentascode/issues/24">Implement github issues as a page discussion feature (#24)</a><br />
- - <a href="https://github.com/iilab/contentascode/issues/35">Integration with waffle.io (#35)</a><br />
- - <a href="https://github.com/iilab/contentascode/issues/36">Integration with kanban.leanlabs.io (#36)</a></p>
+<p>This gitbook component Repofs (https://github.com/GitbookIO/repofs) is an interesting approach to integrating the project navigation (and common features currently not in Prose like moving files, creating folders or dealing with templates.</p>
 
     </div>
 

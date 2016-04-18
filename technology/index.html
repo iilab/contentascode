@@ -98,7 +98,19 @@
       
         
           
+        
+      
+        
+          
+        
+      
+        
+          
             <a class="sidebar-nav-item" href="/contentascode/partners/">Partners</a>
+          
+        
+      
+        
           
         
       
@@ -173,18 +185,32 @@
   <li><a href="inspiration">Inspiration</a> from other projects</li>
 </ul>
 
-<h2 id="technical-goals">Technical Goals</h2>
+<!-- MarkdownTOC -->
 
-<ul id="markdown-toc">
-  <li><a href="#technical-goals" id="markdown-toc-technical-goals">Technical Goals</a>    <ul>
-      <li><a href="#cms-parity" id="markdown-toc-cms-parity">CMS Parity</a></li>
-      <li><a href="#flexible-structure" id="markdown-toc-flexible-structure">Flexible structure</a></li>
-      <li><a href="#interoperable-and-extensible" id="markdown-toc-interoperable-and-extensible">Interoperable and extensible</a></li>
-      <li><a href="#streamlined-and-extensible" id="markdown-toc-streamlined-and-extensible">Streamlined and extensible</a></li>
+<ul>
+  <li><a href="#technical-goals">Technical Goals</a>
+    <ul>
+      <li><a href="#cms-parity">CMS Parity</a></li>
+      <li><a href="#flexible-structure">Flexible structure</a></li>
+      <li><a href="#interoperable-and-extensible">Interoperable and extensible</a></li>
+      <li><a href="#streamlined-and-extensible">Streamlined and extensible</a></li>
     </ul>
   </li>
-  <li><a href="#previous-architecture" id="markdown-toc-previous-architecture">Previous Architecture</a></li>
+  <li><a href="#components--stack">Components / Stack</a>
+    <ul>
+      <li><a href="#source">Source</a></li>
+      <li><a href="#author">Author</a></li>
+      <li><a href="#generate">Generate</a></li>
+      <li><a href="#collaborate">Collaborate</a></li>
+      <li><a href="#integrate">Integrate</a></li>
+      <li><a href="#publish">Publish</a></li>
+    </ul>
+  </li>
 </ul>
+
+<!-- /MarkdownTOC -->
+
+<h2 id="technical-goals">Technical Goals</h2>
 
 <h3 id="cms-parity">CMS Parity</h3>
 
@@ -214,22 +240,190 @@
 
 <p>Composed of many different software parts, the workflow is nonetheless streamlined and integrated. When deployed with default settings, it can be used immediately. Authors, editors, translators as well as software and systems engineer can understand how the pieces fit together.</p>
 
-<h2 id="previous-architecture">Previous Architecture</h2>
+<h2 id="components--stack">Components / Stack</h2>
 
-<p>In the below diagram the following approach is proposed:</p>
+<p>This table aims to represent which components affect which stages of the content as code framework.<br />
+ - Key          : means that this component is a key component for this stage.<br />
+ - Change       : means that this component modifies or applies to this stage.<br />
+ - + component : means that this component works better with the specified component.<br />
+ - = component : means that this component only works with the specified component.<br />
+ - - component : means that this component doesn’t work with the specified component.</p>
 
-<ul>
-  <li>Content Partners : Adhere to content guidelines in order to facilitate interoperability at the editorial level (adaptation of content to various audience - profile, region… - and learning situations - training, self-paced, mobile,…).</li>
-  <li>Curation Layer: A content catalogue helps to understand and coordinate where content is available and where it is missing. It will also aim at collecting feedback metrics from publication partners (aggregated and anonymized).
-    <ul>
-      <li>Curation Tools: Will help draw from the Content Ecosystem to generate content ready for publication (for Open Mentoring this would generate StoryPath compatible Content Packs, alongside Markdown files ready for publication on the wen and generation as a printed guide / for others it might mean importing content into a CMS)</li>
-    </ul>
-  </li>
-  <li>Publication Layer: Will consist of the layer which presents and makes the content accessible to the Learning End User.</li>
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th>Component \ Stack</th>
+      <th>Source</th>
+      <th>Author</th>
+      <th>Integrate</th>
+      <th>Collaborate</th>
+      <th>Generate</th>
+      <th>Translate</th>
+      <th>Publish</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>github</td>
+      <td>Key</td>
+      <td> </td>
+      <td>+ travis</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>+ gh-pages</td>
+    </tr>
+    <tr>
+      <td>gitlab</td>
+      <td>Key</td>
+      <td> </td>
+      <td>+ gitlab-ci</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>prose</td>
+      <td>+ github</td>
+      <td>Key</td>
+      <td> </td>
+      <td> </td>
+      <td>+ jekyll</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>travis</td>
+      <td> </td>
+      <td> </td>
+      <td>Key</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>gitlab-ci</td>
+      <td>- github</td>
+      <td> </td>
+      <td>Key</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>validate</td>
+      <td> </td>
+      <td> </td>
+      <td>Change</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>validate links</td>
+      <td> </td>
+      <td> </td>
+      <td>Change</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>validate style</td>
+      <td> </td>
+      <td> </td>
+      <td>Change</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>jekyll</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Key</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>metalsmith</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Key</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>transifex</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Key</td>
+      <td> </td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>gh-pages</td>
+      <td>+ github</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Key</td>
+    </tr>
+  </tbody>
+</table>
 
-<p><img src="architecture.png" alt="" /></p>
+<h3 id="source">Source</h3>
 
+<p>Source repositories which contain the sources for the current project.</p>
+
+<p>Note: These are not upstream dependencies which will be managed with metadata inside and alongside the source files.</p>
+
+<h3 id="author">Author</h3>
+
+<p>This is where the content is edited, manipulated and so on. Different authoring environment will have different capabilities (for instance for validation without a server round-trip or workflow aspects…).</p>
+
+<h3 id="generate">Generate</h3>
+
+<p>The static site generator used.</p>
+
+<h3 id="collaborate">Collaborate</h3>
+
+<p>Collaborating on the planning, authoring, editing, reviewing, commenting of content.</p>
+
+<h3 id="integrate">Integrate</h3>
+
+<p>These are the tools used to prepare and validate content and give feedback to authors and editors, including presenting staging or testing environments/artifacts of various versions that are being worked on.<br />
+Note: Maybe this should be included in the publish component.</p>
+
+<h3 id="publish">Publish</h3>
+
+<p>These are the various channels where published versions will be available from.</p>
 
 
     </div>
