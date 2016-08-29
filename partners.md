@@ -11,3 +11,4 @@ Projects that have expressed interest in this approach are:
  - TOTEM (Greenhost)
  - Advocacy Assembly (Small Media)
  - Panic Button, Open Mentoring (iilab)
+ - [IndieHosters](https://indiehosters.net)
