@@ -49,7 +49,7 @@ The below roadmap is only loosely enforced and what drives progress on Content a
 | Panic Button      | Simple CMS for Mobile App         | PanicInitiative/PanicButton                            |
 | Using TBB         | Semantic Documentation experiment | elationfoundation/using-tor-browser-bundle             |
 | Security in a Box | Work in Progress                  | coming soon                                            |
-| Level Up          | Work in Progress                  | coming soon                                            |
+| Level Up          | Work in Progress                  | levelupcc/level-up                                     |
 | TOTEM             | Work in Progress                  | coming soon                                            |
 | Advocacy Assembly | Work in Progress                  | coming soon                                            |
 
@@ -63,7 +63,7 @@ The below roadmap is only loosely enforced and what drives progress on Content a
 | Panic Button      | Github | Prose/Markdown        | Jekyll     | gh-pages |             | Self-hosted |
 | Using TBB         | Github | Markdown              | Jekyll     |          |             |             |
 | Security in a Box | Gitlab | Markdown              |            |          |             |             |
-| Level Up          | Github |                       |            |          |             |             |
+| Level Up          | Github | Markdown              | Jekyll     | gh-pages |             | Self-hosted |
 | TOTEM             | Gitlab |                       |            |          |             |             |
 | Advocacy Assembly | Github |                       |            |          |             |             |
 
@@ -77,7 +77,7 @@ The below roadmap is only loosely enforced and what drives progress on Content a
 | Panic Button      | Yes | Yes    | No   | Some        |
 | Using TBB         | Yes |        |      |             |
 | Security in a Box |     |        |      |             |
-| Level Up          |     |        |      |             |
+| Level Up          | Yes |        |      |             |
 | TOTEM             |     |        |      |             |
 | Advocacy Assembly |     |        |      |             |
 
